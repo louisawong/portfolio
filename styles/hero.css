@@ -1,0 +1,36 @@
+
+.hero {
+    width: 100vw;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.fullname {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 6vw;
+    line-height: 0.5rem;
+}
+
+.nameTitle {
+    height: 10%;
+    text-align: center;
+    width: 50vw;
+}
+
+.title {
+    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+
+.leftarrow {
+  width: 10vw;
+}
+
+.rightarrow {
+  width: 10vw;
+}

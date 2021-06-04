@@ -1,0 +1,8 @@
+.projects {
+    height: 300px;
+    width: 500px;
+    border-radius: 10px;
+    background-color: rgba(152, 84, 201, 0.384);
+    margin-left: 30px;
+    padding: 20px;
+}
