@@ -1,36 +1,81 @@
-
 .hero {
-    width: 100vw;
-    display:flex;
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+.hero_text_name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
 }
 
 .fullname {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    letter-spacing: 1px;
-    font-size: 6vw;
-    line-height: 0.5rem;
+    margin:0;
+    font-size: 2em;
+    letter-spacing: 2px;
+    font-weight: 600;
 }
 
-.nameTitle {
-    height: 10%;
-    text-align: center;
-    width: 50vw;
+
+.arrow {
+    width: 10vw;
+    animation-name: bounce;
+    animation-timing-function:ease;
+    -webkit-animation-duration: 1.4s;
+    animation-duration: 1.4s;
+    /* animation-iteration-count: infinite; */
+    margin: 0 auto 0 auto;
+    transform-origin: bottom;
 }
 
-.title {
-    /* font-family: 'Playfair Display', serif; */
-    font-family: 'Raleway', sans-serif;
+.bounce {
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
+@keyframes bounce {
+    10%   { transform: scale(1,1)      translateY(0); }
+    20%  { transform: scale(0.95,0.95)   translateY(0); }
+    /* 10%  { transform: scale(0.9,.9)   translateY(0); } */
+    40%  { transform: scale(.95,1.05)   translateY(-3px); }
+    70%  { transform: scale(1,.95) translateY(0); }
+    80%  { transform: scale(1,1)      translateY(-1px); }
+    /* 30%  { transform: scale(.9,1.05)   translateY(-5px); } */
+    90%  { transform: scale(1,.95) translateY(0); }
+    /* 50%  { transform: scale(1,.95) translateY(0); } */
+    /* 57%  { transform: scale(1,1)      translateY(-3px); } */
+    /* 64%  { transform: scale(1,1)      translateY(0); } */
+    /* 100% { transform: scale(1,1)      translateY(0); } */
+}
+
+.hero_text_description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#textAnimation {
+    font-size: 1.5em;
     font-weight: 300;
-    letter-spacing: 3px;
+    margin: 0;
 }
 
-.leftarrow {
-  width: 10vw;
+.cursor {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: rgb(204, 204, 204);
 }
 
-.rightarrow {
-  width: 10vw;
+.cursorActive{
+    animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    color: transparent;
+  }
 }
