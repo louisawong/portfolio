@@ -21,35 +21,8 @@
     font-weight: 600;
 }
 
-
 .arrow {
     width: 10vw;
-    animation-name: bounce;
-    animation-timing-function:ease;
-    -webkit-animation-duration: 1.4s;
-    animation-duration: 1.4s;
-    /* animation-iteration-count: infinite; */
-    margin: 0 auto 0 auto;
-    transform-origin: bottom;
-}
-
-.bounce {
-    animation-name: bounce;
-    animation-timing-function: ease;
-}
-@keyframes bounce {
-    10%   { transform: scale(1,1)      translateY(0); }
-    20%  { transform: scale(0.95,0.95)   translateY(0); }
-    /* 10%  { transform: scale(0.9,.9)   translateY(0); } */
-    40%  { transform: scale(.95,1.05)   translateY(-3px); }
-    70%  { transform: scale(1,.95) translateY(0); }
-    80%  { transform: scale(1,1)      translateY(-1px); }
-    /* 30%  { transform: scale(.9,1.05)   translateY(-5px); } */
-    90%  { transform: scale(1,.95) translateY(0); }
-    /* 50%  { transform: scale(1,.95) translateY(0); } */
-    /* 57%  { transform: scale(1,1)      translateY(-3px); } */
-    /* 64%  { transform: scale(1,1)      translateY(0); } */
-    /* 100% { transform: scale(1,1)      translateY(0); } */
 }
 
 .hero_text_description {
