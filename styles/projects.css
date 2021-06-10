@@ -1,0 +1,15 @@
+.project_body_left {
+    transform: skewX(-10deg) translateX(-20vw);
+    width: 100vw;
+    height: 200px;
+    background: var(--dark);   
+    margin-bottom: 30px;
+}
+
+.project_body_right {
+    transform: skewX(-10deg) translateX(20vw);
+    width: 100vw;
+    height: 200px;
+    background: var(--dark);  
+    margin-bottom: 30px; 
+}

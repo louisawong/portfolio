@@ -1,7 +1,16 @@
 @import "./hero.css";
 @import "./projects.css";
+@import "./navigation.css";
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --primary: rgb(149,229,219);
+  --light: rgb(152,84,201);
+  --accent: rgb(211, 86, 134);
+  --accent_blue: rgb(255, 173, 21);
+  --dark: rgb(78, 135, 145);
+}
 
 html,
 body {
@@ -11,10 +20,9 @@ body {
 }
 
 .main {
-  background: rgb(152,84,201);
-  background: radial-gradient(circle, rgba(152,84,201,1) 0%, rgba(104,62,157,1) 21%, rgba(69,40,124,1) 43%, rgba(22,19,47,1) 78%);
+  background: var(--primary);
+  background: radial-gradient(circle, var(--primary) 0%, rgb(133, 214, 205) 21%, rgb(125, 196, 187) 43%, rgb(98, 165, 157) 78%);
   color: white;
-  height: 100vh;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -26,3 +34,10 @@ a {
 * {
   box-sizing: border-box;
 }
+
+li {
+  letter-spacing: 1px;
+  list-style: none;
+  text-align: right;
+}
+

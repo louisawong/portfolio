@@ -1,7 +1,9 @@
 import Head from 'next/head'
-import {useEffect} from 'react'
+import {useEffect, useState} from 'react'
 
 export default function Home() {
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   useEffect(()=>{
     descriptionAnimation();
@@ -55,6 +57,17 @@ export default function Home() {
     typing(contentList[0])
 
   }
+
+  function menuHandler () {
+    const menu = document.getElementById("hamburger_menu");
+    if (!isMenuOpen) {
+      menu.classList.add("open");
+      setIsMenuOpen(!isMenuOpen)
+    } else {
+      menu.classList.remove("open")
+      setIsMenuOpen(!isMenuOpen)
+    }
+  }
   
   return (
     <div >
@@ -66,11 +79,29 @@ export default function Home() {
       <main className="main">
           
           <div className="hero">
+            <div className="navigation">
+              <div className="navigation_icons">
+                <img className="nav_icon" src="./images/GitHub-Mark-Light-120px-plus.png"/>
+                <img className="nav_icon" src="./images/LI-In-Bug.png"/>
+                <a href = "mailto: louisa.wy.wong@gmail.com?subject=Let's%20Connect!"><img className="nav_icon" src="./images/mail_white_48dp.svg"/></a>
+              </div>
+              <div className="navigation_choice">
+                <div className="resume">Resume</div>
+                <div id="hamburger_menu" className="hamburger_menu" onClick={menuHandler}>
+                  <div className="hamburger_menu_btn"></div>
+                </div>
+
+                {/* <li>Projects</li>
+                <li>About Me</li>
+                <li>Technologies</li>
+                <li>Contact Me</li> */}
+              </div>
+            </div>
             <div className="hero_text">
               <div className="hero_text_name">
-                <img src="/images/left_arrow.svg" className="arrow"/>
+                <img src="/images/leftArrow.svg" className="arrow"/>
                 <h1 className="fullname"> LOUISA WONG</h1>
-                <img src="/images/right_arrow.svg" className="arrow" />
+                <img src="/images/rightArrow.svg" className="arrow" />
               </div>
               <div className="hero_text_description">
                 <h1 id="textAnimation"></h1>
@@ -78,8 +109,15 @@ export default function Home() {
               </div>
             </div>
             
-            <div className="hero_image">
+            <div className="project_body_left">
             </div>
+            
+            <div className="project_body_right">
+            </div>
+            
+            <div className="project_body_left">
+            </div>
+            
           </div>
       
       </main>
@@ -87,3 +125,4 @@ export default function Home() {
     </div>
   )
 }
+              <div className="logo">Logo</div>

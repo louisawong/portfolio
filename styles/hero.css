@@ -23,24 +23,28 @@
 
 .arrow {
     width: 10vw;
+    filter: drop-shadow( 3px 3px 1px rgba(255, 177, 9, 0.603))
 }
 
 .hero_text_description {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 30px;
 }
 
 #textAnimation {
     font-size: 1.5em;
     font-weight: 300;
     margin: 0;
+    letter-spacing: 2px;
 }
 
 .cursor {
     font-size: 1.5em;
     font-weight: 500;
-    color: rgb(204, 204, 204);
+    color: #4e8791;
+    /* color: rgb(204, 204, 204); */
 }
 
 .cursorActive{
