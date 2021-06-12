@@ -1,0 +1,32 @@
+
+
+.about_body_right {
+    transform: skewX(-10deg) translateX(35vw) translateY(calc(-200px - 7.5vh));
+    width: 100vw;
+    height: 200px;
+    background: var(--dark);  
+    margin-bottom: 30px; 
+}
+
+.profile_wrapper {
+    position: relative;
+}
+
+.profile {
+    width: 200px;
+    border: 3px solid white;
+    z-index: 999;
+    margin: 3vh;
+    filter: drop-shadow(2.5vh -2.5vh 0px var(--accent_blue));
+}
+
+/* .profile_decor {
+    margin: 3vh;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background-color: var(--accent_blue);
+    top: 0;
+    left: 0;
+    transform: translateY(-20px) translateX(20px);
+} */

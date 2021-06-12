@@ -1,15 +1,68 @@
+
+
 .project_body_left {
-    transform: skewX(-10deg) translateX(-20vw);
+    transform: skewX(-10deg)translateX(-20vw);
     width: 100vw;
     height: 200px;
     background: var(--dark);   
-    margin-bottom: 30px;
 }
 
 .project_body_right {
     transform: skewX(-10deg) translateX(20vw);
     width: 100vw;
     height: 200px;
-    background: var(--dark);  
-    margin-bottom: 30px; 
+    background: var(--dark);     
+}
+
+.mock1 {
+    /* display: flex;
+    align-items: center; */
+    width: 100vw;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.mock_plantiful {
+    height: 180px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    /* transform: translateX(-25vw); */
+    /* position: absolute;
+    right: 0;
+    bottom: 0; */
+}
+.mock_cardshare {
+    height: 180px;
+    position: absolute;
+    top: 10px;
+    right: 0px;
+}
+
+.mock_fitome {
+    height: 180px;
+    position: absolute;
+    top: 10px;
+    left: -5vw;
+}
+
+.project_left_content {
+    position: absolute;
+    top:0;
+    left: 10vh;
+}
+
+.project_right_content {
+    position: absolute;
+    top:0;
+    right: 10vh;
+    text-align: right;
+}
+
+.project_left_name {
+    /* transform: translateX(23vw); */
+    /* margin: 0; */
+    font-size: 1em;
+    font-weight: 500;
+    color: var(--accent_blue)
 }

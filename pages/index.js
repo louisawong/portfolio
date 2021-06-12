@@ -59,12 +59,21 @@ export default function Home() {
   }
 
   function menuHandler () {
+    const main = document.getElementById("main")
     const menu = document.getElementById("hamburger_menu");
+    const choices = document.getElementById("hamburger_choices");
+    const social = document.getElementById("navigation_icons");
     if (!isMenuOpen) {
+      main.classList.add("open")
       menu.classList.add("open");
-      setIsMenuOpen(!isMenuOpen)
+      choices.classList.add("open");
+      social.classList.add("open")
+      setIsMenuOpen(!isMenuOpen);
     } else {
-      menu.classList.remove("open")
+      main.classList.remove("open")
+      menu.classList.remove("open");
+      choices.classList.remove("open");
+      social.classList.remove("open")
       setIsMenuOpen(!isMenuOpen)
     }
   }
@@ -76,25 +85,32 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="main">
+      <main id="main" className="main">
           
           <div className="hero">
             <div className="navigation">
-              <div className="navigation_icons">
-                <img className="nav_icon" src="./images/GitHub-Mark-Light-120px-plus.png"/>
-                <img className="nav_icon" src="./images/LI-In-Bug.png"/>
+              <div id ="navigation_icons" className="navigation_icons">
+                <a href="https://github.com/louisawong" target="_blank"><img className="nav_icon" src="./images/GitHub-Mark-Light-120px-plus.png"/></a>
+                <a href="https://www.linkedin.com/in/louisa-wy-wong/" target="_blank"><img className="nav_icon" src="./images/LI-In-Bug.png"/></a>
                 <a href = "mailto: louisa.wy.wong@gmail.com?subject=Let's%20Connect!"><img className="nav_icon" src="./images/mail_white_48dp.svg"/></a>
               </div>
               <div className="navigation_choice">
-                <div className="resume">Resume</div>
+                <a href="./files/Louisa_Wong_Resume_June_2021.pdf" download><div className="resume" >Resume</div></a>
                 <div id="hamburger_menu" className="hamburger_menu" onClick={menuHandler}>
                   <div className="hamburger_menu_btn"></div>
                 </div>
+                <div id="hamburger_choices" className="hamburger_choices">
+                  <a className="hamburger_choices_option" onClick={menuHandler} href="#projects">Projects</a>
+                  <a className="hamburger_choices_option" onClick={menuHandler} href="#about">About Me</a>
+                  <a className="hamburger_choices_option" onClick={menuHandler} href="#tech">Technologies</a>
+                  <a className="hamburger_choices_option" onClick={menuHandler} href="#contact">Contact Me</a>
+                  <div className="hamburger_choices_social">
+                    <a href="https://github.com/louisawong" target="_blank"><img className="nav_icon" src="./images/GitHub-Mark-Light-120px-plus.png"/></a>
+                    <a href="https://www.linkedin.com/in/louisa-wy-wong/" target="_blank"><img className="nav_icon" src="./images/LI-In-Bug.png"/></a>
+                    <a href = "mailto: louisa.wy.wong@gmail.com?subject=Let's%20Connect!"><img className="nav_icon" src="./images/mail_white_48dp.svg"/></a>
+                  </div>
+                </div>
 
-                {/* <li>Projects</li>
-                <li>About Me</li>
-                <li>Technologies</li>
-                <li>Contact Me</li> */}
               </div>
             </div>
             <div className="hero_text">
@@ -109,15 +125,55 @@ export default function Home() {
               </div>
             </div>
             
-            <div className="project_body_left">
+            <h1 className="section_title">SELECT PROJECTS</h1>
+            <div id="projects">
+              <div className="mock1">
+                <div className="project_body_left"></div>
+                <div className="project_left_content">
+                  <h1 className="project_left_name">Plantiful - Web Application</h1>
+                  <p className="project_left_description">An applicationhjcbcsjnsknjcnjkjnknjsnkkjn</p>
+                  <div className="details">More Details >></div>
+                </div>
+                <img className="mock_plantiful" src="./images/mock_plantiful.png" />
+              </div>
+              <div className="mock1">
+                <div className="project_body_right"></div>
+                <div className="project_right_content">
+                  <h1 className="project_left_name">Fitome - Progressive Web Application</h1>
+                  <p className="project_left_description">An applicationhjcbcsjnsknjcnjkjnknjsnkkjn</p>
+                  <div className="details">More Details >></div>
+                </div>
+                <img className="mock_fitome" src="./images/mock_mobile_fitome.png" />
+              </div>
+              
+              <div className="mock1">
+                <div className="project_body_left"></div>
+                <div className="project_left_content">
+                  <h1 className="project_left_name">CardShare- Web Application</h1>
+                  <p className="project_left_description">An applicationhjcbcsjnsknjcnjkjnknjsnkkjn</p>
+                  <div className="details">More Details >></div>
+                </div>
+                <img className="mock_cardshare" src="./images/mock_cardshare.png" />
+              </div>
             </div>
             
-            <div className="project_body_right">
+            <h1 className="section_title">ABOUT ME</h1>
+            <div id="about" className="about">
+              <div className="profile_wrapper"> 
+                <div className="profile_decor"></div>
+                <img className="profile" src="./images/headshot_bw.png"/>
+              </div>
+              <div className="about_body_right">
+                  <p className="project_left_description">An applicationhjcbcsjnsknjcnjkjnknjsnkkjn</p>
+              </div>
             </div>
-            
-            <div className="project_body_left">
+
+            <div id="tech">
+              <h1 className="section_title">TECHNOLOGIES</h1>
+              <div className="project_body_left">
+              </div>
             </div>
-            
+
           </div>
       
       </main>

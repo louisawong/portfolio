@@ -1,13 +1,8 @@
 .navigation {
     width: 100vw;
-    /* background: teal; */
     padding: 3vh;
     display: flex;
     justify-content: flex-end;
-}
-
-.navigation_choice {
-    margin:0;
 }
 
 .navigation_icons {
@@ -19,8 +14,7 @@
     height: 130px;
     top: 0;
     left: 0;
-    padding-top: 3vh;
-    padding-left: 3vh;
+    margin: 3vh;
     filter: grayscale(100%) brightness(100);
 }
 
@@ -35,7 +29,7 @@
     margin: 5px;
     border-radius: 5px;
     text-align: center;
-    transform: translateX(-60px)
+    transform: translateX(-60px);
 }
 
 .hamburger_menu {
@@ -90,4 +84,46 @@
 
 .hamburger_menu.open .hamburger_menu_btn::after {
     transform: rotate(-45deg) translate(30px, 30px);
+}
+
+.hamburger_choices {
+    width: 100vw;
+    height: calc(100vh - 60px);
+    position: absolute;
+    top: calc(3vh + 50px);
+    right: 0;
+    background-color: var(--accent_blue);
+    display: none;
+    z-index: 999;
+    padding: 20px;
+}
+
+.hamburger_choices.open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation_icons.open {
+    display: none;
+}
+
+.main.open {
+    overflow: hidden;
+    height: 100vh;
+}
+
+.hamburger_choices_option {
+    margin: 20px;
+}
+
+.hamburger_choices_social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 130px;
+    margin: 20px;
+    transition: all 0.5s ease-in-out;
+    filter: grayscale(100%) brightness(100);
 }

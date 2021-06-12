@@ -1,14 +1,17 @@
 @import "./hero.css";
 @import "./projects.css";
 @import "./navigation.css";
+@import "./about.css";
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
   --primary: rgb(149,229,219);
+  /* --primary: rgb(133, 246, 250); */
   --light: rgb(152,84,201);
   --accent: rgb(211, 86, 134);
-  --accent_blue: rgb(255, 173, 21);
+  --accent_blue: rgb(255, 208, 0);
+  /* --accent_blue: rgb(255, 173, 21); */
   --dark: rgb(78, 135, 145);
 }
 
@@ -24,6 +27,7 @@ body {
   background: radial-gradient(circle, var(--primary) 0%, rgb(133, 214, 205) 21%, rgb(125, 196, 187) 43%, rgb(98, 165, 157) 78%);
   color: white;
   font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -39,5 +43,17 @@ li {
   letter-spacing: 1px;
   list-style: none;
   text-align: right;
+}
+
+.section_title {
+  padding: 3vh;
+  width: 100vw;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 1em;
+  color: white;
+  margin:0;
+  /* color: var(--accent_blue) */
+  /* text-shadow: -1px 0 var(--accent_blue), 0 1px var(--accent_blue), 1px 0 var(--accent_blue), 0 -1px var(--accent_blue); */
 }
 
