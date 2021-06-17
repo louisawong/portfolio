@@ -39,6 +39,9 @@
     object-fit: cover;
     border: 3pßx solid white;
     z-index: 999;
+    position:absolute;
+    top: 0;
+    left:0;
 }
 
 .profile .profile_hover {
