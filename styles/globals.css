@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-  --primary: rgb(149,229,219);
+  --primary: #95e5db;
   /* --primary: rgb(133, 246, 250); */
   --light: rgb(152,84,201);
   --accent: rgb(211, 86, 134);
@@ -37,6 +37,7 @@ a {
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 li {
@@ -53,7 +54,15 @@ li {
   font-size: 1em;
   color: white;
   margin:0;
-  /* color: var(--accent_blue) */
-  /* text-shadow: -1px 0 var(--accent_blue), 0 1px var(--accent_blue), 1px 0 var(--accent_blue), 0 -1px var(--accent_blue); */
+}
+
+.button {
+  background: var(--accent_blue);
+  color: white;
+  padding: 8px 10px;
+  border: 0;
+  border-radius: 5px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
 }
 

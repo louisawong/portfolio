@@ -24,11 +24,11 @@
 }
 
 .resume {
-    background-color: var(--accent_blue);
-    padding: 5px 8px;
-    margin: 5px;
-    border-radius: 5px;
-    text-align: center;
+    /* background-color: var(--accent_blue); */
+    /* padding: 5px 8px; */
+    /* margin: 5px; */
+    /* border-radius: 5px; */
+    /* text-align: center; */
     transform: translateX(-60px);
 }
 

@@ -1,4 +1,6 @@
-
+.projects {
+    height: fit-content;
+}
 
 .project_body_left {
     transform: skewX(-10deg)translateX(-20vw);
@@ -65,4 +67,16 @@
     font-size: 1em;
     font-weight: 500;
     color: var(--accent_blue)
+}
+
+#plantiful {
+    /* transform-origin: center */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform-origin: center;
+    transform: translateZ(-300px) scale(2);
+    z-index: 3;
 }

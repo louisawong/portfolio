@@ -1,11 +1,13 @@
-
+.about {
+    height: calc(200px + 3vh);
+    margin-bottom: 30px;
+}
 
 .about_body_right {
-    transform: skewX(-10deg) translateX(35vw) translateY(calc(-200px - 7.5vh));
+    transform: skewX(-10deg) translateX(35vw) translateY(calc(-210px - 3vh));
     width: 100vw;
     height: 200px;
     background: var(--dark);  
-    margin-bottom: 30px; 
 }
 
 .profile_wrapper {
@@ -16,7 +18,7 @@
     width: 200px;
     border: 3px solid white;
     z-index: 999;
-    margin: 3vh;
+    margin: 3vh 0 0 3vh;
     filter: drop-shadow(2.5vh -2.5vh 0px var(--accent_blue));
 }
 
