@@ -37,11 +37,11 @@
     width: 200px;
     height: 200px;
     object-fit: cover;
-    border: 3pßx solid white;
     z-index: 999;
     position:absolute;
     top: 0;
     left:0;
+    border: 3px solid white;
 }
 
 .profile .profile_hover {
