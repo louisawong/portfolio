@@ -32,9 +32,7 @@ export default function Home() {
       let value = window.scrollY;
       plantiful.style.right=value*0.25+'px';
       // plantiful_mock.style.bottom=value*0.25+'px';
-       while (value > fitomeTop) {
-         fitome.style.left = value*0.25+'px';
-       }
+      fitome.style.left = value*0.25+'px';
 
     })
   }
@@ -154,14 +152,15 @@ export default function Home() {
               </div>
             </div>
             
-            <h1 className="section_title">SELECT PROJECTS</h1>
+            <h1 className="section_title project_title">SELECT PROJECTS</h1>
+            <h3 className="section_title">Check Github for Details</h3>
             <div id="projects" className="projects">
               <div className="mock1" id="plantiful">
                 <div className="project_body_left"></div>
                 <div className="project_left_content">
                   <h1 className="project_left_name">Plantiful - Web Application</h1>
-                  <p className="project_left_description">An applicationhjcbcsjnsknjcnjkjnknjsnkkjn</p>
-                  <button type="button" className="details button">More Details >></button>
+                  <p className="project_left_description">An application built for the plant loving communities to inspire and plant </p>
+                  {/* <button type="button" className="details button">More Details >></button> */}
                 </div>
                 <img className="mock_plantiful" id="plantiful_mock" src="./images/mock_plantiful.png" />
               </div>
@@ -170,7 +169,7 @@ export default function Home() {
                 <div className="project_right_content">
                   <h1 className="project_left_name">Fitome - Progressive Web Application</h1>
                   <p className="project_left_description">An applicationhjcbcsjnsknjcnjkjnknjsnkkjn</p>
-                  <button type="button" className="details button">More Details >></button>
+                  {/* <button type="button" className="details button">More Details >></button> */}
                 </div>
                 <img className="mock_fitome" src="./images/mock_mobile_fitome.png" />
               </div>
@@ -180,7 +179,7 @@ export default function Home() {
                 <div className="project_left_content">
                   <h1 className="project_left_name">CardShare- Web Application</h1>
                   <p className="project_left_description">An applicationhjcbcsjnsknjcnjkjnknjsnkkjn</p>
-                  <button type="button" className="details button"> More Details >> </button>
+                  {/* <button type="button" className="details button"> More Details >> </button> */}
                 </div>
                 <img className="mock_cardshare" src="./images/mock_cardshare.png" />
               </div>
@@ -190,7 +189,10 @@ export default function Home() {
             <div id="about" className="about">
               <div className="profile_wrapper"> 
                 <div className="profile_decor"></div>
-                <img className="profile" src="./images/headshot_bw.png"/>
+                <div className="profile">
+                  <img className="profile_main" src="./images/portfolio_2.jpg"/>
+                  <img className="profile_hover" src="./images/portfolio_1.jpg"/>
+                </div>
               </div>
               <div className="about_body_right">
                   <p className="project_left_description">An applicationhjcbcsjnsknjcnjkjnknjsnkkjn</p>

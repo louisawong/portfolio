@@ -69,14 +69,6 @@
     color: var(--accent_blue)
 }
 
-#plantiful {
-    /* transform-origin: center */
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    transform-origin: center;
-    transform: translateZ(-300px) scale(2);
-    z-index: 3;
+.project_title {
+    margin-bottom: 0;
 }
