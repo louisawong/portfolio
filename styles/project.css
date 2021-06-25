@@ -139,6 +139,10 @@
     font-size: 1.5em;
 }
 
+.project_detail_exit:hover {
+    cursor: pointer;
+}
+
 .project_detail_subtitle {
     font-size: 0.80em;
     letter-spacing: 1px;

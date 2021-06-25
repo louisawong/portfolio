@@ -1,5 +1,4 @@
 @import "./hero.css";
-@import "./projects.css";
 @import "./project.css";
 @import "./navigation.css";
 @import "./about.css";
@@ -81,4 +80,8 @@ li {
 
 .yellow {
   color: var(--accent_blue);
+}
+
+.gap {
+  margin-top: 3vh;
 }

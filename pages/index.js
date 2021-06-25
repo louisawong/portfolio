@@ -5,6 +5,8 @@ export default function Home() {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isDetailPlantifulOpen, setIsDetailPlantifulOpen] = useState(false);
+  const [isDetailFitomeOpen, setIsDetailFitomeOpen] = useState(false);
+  const [isDetailCardshareOpen, setIsDetailCardshareOpen] = useState(false);
 
   useEffect(()=>{
     descriptionAnimation();
@@ -108,6 +110,8 @@ export default function Home() {
 
   function detailHandler (ele) {
     const plantiful = document.getElementById("detail_plantiful")
+    const fitome = document.getElementById("detail_fitome");
+    const cardshare = document.getElementById("detail_cardshare");
     if(ele === "plantiful" && isDetailPlantifulOpen) {
       plantiful.classList.remove("detail_open");
       setIsDetailPlantifulOpen(!isDetailPlantifulOpen);
@@ -115,6 +119,22 @@ export default function Home() {
     else if(ele === "plantiful" && !isDetailPlantifulOpen) {
       plantiful.classList.add("detail_open");
       setIsDetailPlantifulOpen(!isDetailPlantifulOpen);
+    }
+    else if (ele === "fitome" && isDetailFitomeOpen) {
+      fitome.classList.remove("detail_open");
+      setIsDetailFitomeOpen(!isDetailFitomeOpen);
+    }
+    else if(ele === "fitome" && !isDetailFitomeOpen) {
+      fitome.classList.add("detail_open");
+      setIsDetailFitomeOpen(!isDetailFitomeOpen);
+    }
+    else if (ele === "cardshare" && isDetailCardshareOpen) {
+      cardshare.classList.remove("detail_open");
+      setIsDetailCardshareOpen(!isDetailCardshareOpen);
+    }
+    else if(ele === "cardshare" && !isDetailCardshareOpen) {
+      cardshare.classList.add("detail_open");
+      setIsDetailCardshareOpen(!isDetailCardshareOpen);
     }
     
   }
@@ -202,98 +222,98 @@ export default function Home() {
               </ul>
             </div>
             
-            <div className="project_right_wrapper">
+            <div className="project_right_wrapper gap">
               <img className="project_left_mock" src="./images/mock_fitome.png" />
               <div className="project_right">
-                <h1 className="project_left_title">Plantiful - Web Application</h1>
-                <p className="project_left_info">A responsive web application designed for the plant-loving community. Users are able to connect with nearby users to sell or trade their plant collection or to share their plant inspirations globally.</p>
-                <p className="project_left_tech"><span className="yellow">[</span>React, Next.JS, Next.JS API, Redux, SASS, MongoDB, Mongoose, Firebase<span className="yellow">]</span></p>
-                <div className="project_left_arrow bounce" onClick={()=>detailHandler("plantiful")}>>></div>
+                <h1 className="project_left_title">Fitome – Progressive Web Application</h1>
+                <p className="project_left_info">A  management tool for personal trainers to connect with their clients during the pandemic and even afterwards. A tool for personal trainers to assign workout regimens and to schedule video calls for workouts and checkups with their clients directly on the app. Clients are able to view workouts and join their scheduled video calls on the client-side application.</p>
+                <p className="project_left_tech"><span className="yellow">[</span>Peer2Peer, Socket.io, Google WorkBox, Express, PostgreSQL, Sequelize, Redux, React, Next.JS, Firebase<span className="yellow">]</span></p>
+                <div className="project_left_arrow bounce" onClick={()=>detailHandler("fitome")}>>></div>
               </div>
             </div>
-            <div className="project_left_detail" id="detail_plantiful">
-            <div className="project_detail_exit" onClick={()=>detailHandler("plantiful")}>X</div>
+            <div className="project_left_detail" id="detail_fitome">
+            <div className="project_detail_exit" onClick={()=>detailHandler("fitome")}>X</div>
+              <h3 className="project_left_detail_title">Trainer User Stories:</h3>
+              <ul className="project_detail_list">
+                <li>Users are able to sign up and login as a trainer</li>
+                <li>Trainers are given a unique personal code for clients to connect with them</li>
+                <li>Trainers are able to create their own exercises that are fully customizable with video option so clients can follow</li>
+                <li>Trainers are able to create their own reusable workouts by selecting a couple exercises from their list.
+                </li>
+                <li>Trainers are able to personally assign the workouts to their individual clients with personalized amount of workouts and notes
+                </li>
+                <li>Trainers are able to schedule video calls with their clients for weekly workouts and checkups
+                </li>
+                <li>Trainers are able to use and edit the real-time stopwatch overlay during a video call
+                </li>
+              </ul>
+              <h3 className="project_left_detail_title">Client User Stories:</h3>
+              <ul className="project_detail_list">
+                <li>Users are able to sign up and login as a client
+                </li>
+                <li>Clients must connect with their trainers via trainer’s personal code
+                </li>
+                <li>Clients are able to input and edit their personal info for their trainers to view (ie. Height, muscle measurements, etc)
+                </li>
+                <li>Clients are able to view their workouts and detailed exercises online and offline
+                </li>
+                <li>Clients are able to view their call schedules and join calls with their trainer
+                </li>
+                <li>Clients are able to use and edit the real-time stopwatch overlay during a video call
+                </li>
+              </ul>   
+              <h3 className="project_left_detail_title">Contributions:</h3>
+              <p className="project_detail_subtitle">Lead a fully remote team of 4 engineers as the Scrum Master from start to deployment.</p>
+              <ul className="project_detail_list">
+                <li>Built the main video chat feature using socket.io and Peer2Peer connection on both front and backend on Express</li>
+                <li>Wire-framed and designed the style and data flow with a mobile-first approach to create a beautiful, responsive UI</li>
+                <li>Built out the interactive forms for data inputs with validation</li>
+              </ul>
+            </div>
+
+            <div className="project_left_wrapper gap">
+              <div className="project_left">
+                <h1 className="project_left_title">CardShare - Web Application</h1>
+                <p className="project_left_info">A flashcard sharing site made for booklovers to retain and share knowledge.</p>
+                <p className="project_left_tech"><span className="yellow">[</span>TypeScript, Jest, React Testing Library, SuperTest, React, Next.JS, Express, MongoDB, Mongoose, Firebase<span className="yellow">]</span></p>
+                <div className="project_left_arrow bounce" onClick={()=>detailHandler("cardshare")}>>></div>
+              </div>
+              <img className="project_left_mock" src="./images/mock_cardshare.png"  />
+            </div>
+            <div className="project_left_detail" id="detail_cardshare">
+            <div className="project_detail_exit" onClick={()=>detailHandler("cardshare")}>X</div>
               <h3 className="project_left_detail_title">User Stories:</h3>
               <ul className="project_detail_list">
-                <li>Users are able to create their own portfolio with a location tag</li>
-                <li>Users are able to discover inspiration posts from around the world based on most recent postings</li>
-                <li>Users are able to discover trades around them based on their current location</li>
-                <li>Users are able to contact other users via email for trades that interests them</li>
-                <li>Users are able to post plants for sell or for trade with geospatial tag and offer details</li>
-                <li>Users are able to post photos of plant inspiration with geospatial tag and description</li>
-                <li>Users are able to search for plants through all posts</li>
-                <li>Users are able to delete any posts they own</li>
-                <li>Users are able to view other users’ profile with their posts separated by trade or inspiration</li>
+                <li>Users are able to make their own accounts
+                </li>
+                <li>Users are able to search for literatures in the search bar (Google Books API)
+                </li>
+                <li>Users are able to save other users deck to their “Study” page
+                </li>
+                <li>Users are able to explore the most popular decks on the site
+                </li>
+                <li>Users are able to upvote or downvote other decks
+                </li>
+                <li>Users are able to discover other decks using the same literature
+                </li>
+                <li>Users are able create their own decks
+                </li>
+                <li>Users are able to study by going through flashcards, one by one.
+                </li>
+
               </ul>
               <h3 className="project_left_detail_title">Contributions:</h3>
-              <p className="project_detail_subtitle">Built the app from ideation to deployment in less than a week.</p>
+              <p className="project_detail_subtitle">Brought on with a small team of engineer to test and to refactor legacy codebase.</p>
               <ul className="project_detail_list">
-                <li>Mapped out data flow and wireframed the design and display information</li>
-                <li>Built the API endpoints and database for user and posts information</li>
-                <li>Used MongoDB and geospatial coordinates to filter posts for nearby trades</li>
-                <li>Built react components to be reused throughout the whole website</li>
-                <li>Built and tested input forms for error-handling and validation</li>
+                <li>Translated both frontend and backend code from Javascript to TypeScript
+                </li>
+                <li>Added integration automated tests to backend using SuperTest and Jest
+                </li>
+                <li>Added integration and unit automated tests to frontend with Jest and React Testing Library
+                </li>
+                <li>Divided existing pages into multiple pages and components to increase stability and reusability
+                </li>
               </ul>
-            </div>
-
-          
-            
-
-            <h1 className="section_title project_title">SELECT PROJECTS</h1>
-            <h3 className="project_checkout">Details on Github</h3>
-            <div id="projects" className="projects">
-              <div className="mock1" id="plantiful">
-                <div className="project_body_left"></div>
-                <div className="project_left_content">
-                  <h1 className="project_left_name">Plantiful - Web Application</h1>
-                  <p className="project_left_description">A responsive web application designed for the plant-loving community. Users are able to connect with nearby users to sell or trade their plant collection or to share their plant inspirations globally. </p>
-                  <p className="project_left_description"><span className="yellow">[</span>React, Next.JS, Next.JS API, Redux, SASS, MongoDB, Mongoose, Firebase<span className="yellow">]</span></p>
-                  <div className="details bounce">>></div>
-                </div>
-                <div className="project_detail">
-                  <h3 className="project_detail_title">User Stories:</h3>
-                  <ul>
-                    <li>Users are able to create their own portfolio with a location tag</li>
-                    <li>Users are able to discover inspiration posts from around the world based on most recent postings</li>
-                    <li>Users are able to discover trades around them based on their current location</li>
-                    <li>Users are able to contact other users via email for trades that interests them</li>
-                    <li>Users are able to post plants for sell or for trade with geospatial tag and offer details</li>
-                    <li>Users are able to post photos of plant inspiration with geospatial tag and description</li>
-                    <li>Users are able to search for plants through all posts</li>
-                    <li>Users are able to delete any posts they own</li>
-                    <li>Users are able to view other users’ profile with their posts separated by trade or inspiration</li>
-                  </ul>
-                  <h3 className="project_detail_title">Contributions:</h3>
-                  <p>Built the app from ideation to deployment in less than a week.</p>
-                  <ul>
-                    <li>Mapped out data flow and wireframed the design and display information</li>
-                    <li>Built the API endpoints and database for user and posts information</li>
-                    <li>Used MongoDB and geospatial coordinates to filter posts for nearby trades</li>
-                    <li>Built react components to be reused throughout the whole website</li>
-                    <li>Built and tested input forms for error-handling and validation</li>
-                  </ul>
-                </div>
-                <img className="mock_plantiful" id="plantiful_mock" src="./images/mock_plantiful.png" />
-              </div>
-              <div className="mock1" id="fitome">
-                <div className="project_body_right"></div>
-                <div className="project_right_content">
-                  <h1 className="project_left_name">Fitome - Progressive Web Application</h1>
-                  <p className="project_left_description">An applicationhjcbcsjnsknjcnjkjnknjsnkkjn</p>
-                  {/* <button type="button" className="details button">More Details >></button> */}
-                </div>
-                <img className="mock_fitome" src="./images/mock_mobile_fitome.png" />
-              </div>
-              
-              <div className="mock1">
-                <div className="project_body_left"></div>
-                <div className="project_left_content">
-                  <h1 className="project_left_name">CardShare- Web Application</h1>
-                  <p className="project_left_description">An applicationhjcbcsjnsknjcnjkjnknjsnkkjn</p>
-                  {/* <button type="button" className="details button"> More Details >> </button> */}
-                </div>
-                <img className="mock_cardshare" src="./images/mock_cardshare.png" />
-              </div>
             </div>
             
             <h1 className="section_title">ABOUT ME</h1>
