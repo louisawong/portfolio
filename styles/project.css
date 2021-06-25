@@ -1,0 +1,149 @@
+.project_left_wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.project_right_wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.project_left {
+    height: fit-content;
+    width: 75vw;
+    background-color: var(--dark);
+    position: relative;
+    z-index: 2;
+    padding: 3vh;
+}
+
+.project_left:after {
+    content: " ";
+    background-color: var(--dark);
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position:absolute;
+    top: 0;
+    left: 10vw;
+    transform: skewX(-10deg);
+    z-index: -1;
+}
+
+.project_right {
+    height: fit-content;
+    width: 75vw;
+    background-color: var(--dark);
+    position: relative;
+    z-index: 2;
+    padding: 3vh;
+}
+
+.project_right:before{
+    content: " ";
+    background-color: var(--dark);
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position:absolute;
+    top: 0;
+    left: -10vw;
+    transform: skewX(-10deg);
+    z-index: -1;
+}
+
+
+.project_left_title {
+    font-size: 1em;
+    color: var(--accent_blue);
+    font-weight: 500;
+    margin: 0;
+}
+
+.project_left_info {
+    width: 100%;
+    font-weight: 300;
+    font-size: 1em;
+    color: white;
+}
+
+.project_left_tech {
+    width: 100%;
+    font-weight: 300;
+    font-size: 0.75em;
+    color: rgb(202, 202, 202);
+}
+
+.project_left_arrow {
+    /* transform: rotate(90deg); */
+    margin: 0;
+    color: var(--accent_blue);
+    width: fit-content;
+    letter-spacing: -3px;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.project_left_arrow:hover {
+    cursor: pointer;
+}
+
+.bounce {
+    animation-name: bouncy;
+    animation-timing-function: ease;
+}
+
+@keyframes bouncy {
+    0%   { transform: translateY(0) rotate(90deg); }
+    50%  { transform: translateY(-10px) rotate(90deg); }
+    100% { transform: translateY(0) rotate(90deg); }
+}
+
+.project_left_mock {
+    height: 25vw;
+    max-height: 180px;
+    z-index: 3;
+}
+
+.project_left_detail {
+    background-color: var(--accent_blue);
+    padding: 3vh;
+    color: rgb(85, 85, 85);
+    width:100vw;
+    display: none;
+}
+
+.project_left_detail_title {
+    font-size: 1em;
+    color: var(--dark);
+    font-weight: 500;
+    margin: 0;
+}
+
+.project_detail_list li {
+    list-style:circle;
+    text-align: left;
+    font-size: 0.8em;
+    line-height: 1.5em;
+}
+
+.project_detail_exit {
+    position: absolute;
+    right: 3vh;
+    font-weight: 800;
+    color: white;
+    font-size: 1.5em;
+}
+
+.project_detail_subtitle {
+    font-size: 0.80em;
+    letter-spacing: 1px;
+}
+
+.detail_open {
+    display: block;
+}

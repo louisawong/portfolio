@@ -22,6 +22,7 @@
     width: 100vw;
     margin-bottom: 30px;
     position: relative;
+    height: fit-content;
 }
 
 .mock_plantiful {
@@ -34,6 +35,7 @@
     right: 0;
     bottom: 0; */
 }
+
 .mock_cardshare {
     height: 180px;
     position: absolute;
@@ -71,4 +73,37 @@
 
 .project_title {
     margin-bottom: 0;
+}
+
+.details {
+    transform: rotate(90deg);
+    color: var(--accent_blue);
+    width: fit-content;
+    letter-spacing: -3px;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.details:hover {
+    cursor: pointer;
+}
+
+.project_left_description {
+    width: 60%;
+}
+
+.project_detail {
+    color: var(--dark);
+    background-color: var(--accent_blue);
+    position: relative;
+    /* top:200px; */
+    left: 10vh;
+    margin:0;
+}
+
+.project_detail_title {
+    text-decoration: underline;
+    text-decoration-color: white;
+    font-weight: 500;
+    font-size: 1em;
 }

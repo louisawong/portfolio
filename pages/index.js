@@ -4,10 +4,11 @@ import {useEffect, useState} from 'react'
 export default function Home() {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isDetailPlantifulOpen, setIsDetailPlantifulOpen] = useState(false);
 
   useEffect(()=>{
     descriptionAnimation();
-    scroll();
+    //scroll();
   }
   ,[])
 
@@ -104,6 +105,19 @@ export default function Home() {
       setIsMenuOpen(!isMenuOpen)
     }
   }
+
+  function detailHandler (ele) {
+    const plantiful = document.getElementById("detail_plantiful")
+    if(ele === "plantiful" && isDetailPlantifulOpen) {
+      plantiful.classList.remove("detail_open");
+      setIsDetailPlantifulOpen(!isDetailPlantifulOpen);
+    }
+    else if(ele === "plantiful" && !isDetailPlantifulOpen) {
+      plantiful.classList.add("detail_open");
+      setIsDetailPlantifulOpen(!isDetailPlantifulOpen);
+    }
+    
+  }
   
   return (
     <div >
@@ -152,15 +166,112 @@ export default function Home() {
               </div>
             </div>
             
+            <h1 className="section_title">SELECT PROJECTS</h1>
+            <h3 className="section_subtitle yellow">Details on Github</h3>
+            <div className="project_left_wrapper">
+              <div className="project_left">
+                <h1 className="project_left_title">Plantiful - Web Application</h1>
+                <p className="project_left_info">A responsive web application designed for the plant-loving community. Users are able to connect with nearby users to sell or trade their plant collection or to share their plant inspirations globally.</p>
+                <p className="project_left_tech"><span className="yellow">[</span>React, Next.JS, Next.JS API, Redux, SASS, MongoDB, Mongoose, Firebase<span className="yellow">]</span></p>
+                <div className="project_left_arrow bounce" onClick={()=>detailHandler("plantiful")}>>></div>
+              </div>
+              <img className="project_left_mock" src="./images/mock_plantiful.png" />
+            </div>
+            <div className="project_left_detail" id="detail_plantiful">
+            <div className="project_detail_exit" onClick={()=>detailHandler("plantiful")}>X</div>
+              <h3 className="project_left_detail_title">User Stories:</h3>
+              <ul className="project_detail_list">
+                <li>Users are able to create their own portfolio with a location tag</li>
+                <li>Users are able to discover inspiration posts from around the world based on most recent postings</li>
+                <li>Users are able to discover trades around them based on their current location</li>
+                <li>Users are able to contact other users via email for trades that interests them</li>
+                <li>Users are able to post plants for sell or for trade with geospatial tag and offer details</li>
+                <li>Users are able to post photos of plant inspiration with geospatial tag and description</li>
+                <li>Users are able to search for plants through all posts</li>
+                <li>Users are able to delete any posts they own</li>
+                <li>Users are able to view other users’ profile with their posts separated by trade or inspiration</li>
+              </ul>
+              <h3 className="project_left_detail_title">Contributions:</h3>
+              <p className="project_detail_subtitle">Built the app from ideation to deployment in less than a week.</p>
+              <ul className="project_detail_list">
+                <li>Mapped out data flow and wireframed the design and display information</li>
+                <li>Built the API endpoints and database for user and posts information</li>
+                <li>Used MongoDB and geospatial coordinates to filter posts for nearby trades</li>
+                <li>Built react components to be reused throughout the whole website</li>
+                <li>Built and tested input forms for error-handling and validation</li>
+              </ul>
+            </div>
+            
+            <div className="project_right_wrapper">
+              <img className="project_left_mock" src="./images/mock_fitome.png" />
+              <div className="project_right">
+                <h1 className="project_left_title">Plantiful - Web Application</h1>
+                <p className="project_left_info">A responsive web application designed for the plant-loving community. Users are able to connect with nearby users to sell or trade their plant collection or to share their plant inspirations globally.</p>
+                <p className="project_left_tech"><span className="yellow">[</span>React, Next.JS, Next.JS API, Redux, SASS, MongoDB, Mongoose, Firebase<span className="yellow">]</span></p>
+                <div className="project_left_arrow bounce" onClick={()=>detailHandler("plantiful")}>>></div>
+              </div>
+            </div>
+            <div className="project_left_detail" id="detail_plantiful">
+            <div className="project_detail_exit" onClick={()=>detailHandler("plantiful")}>X</div>
+              <h3 className="project_left_detail_title">User Stories:</h3>
+              <ul className="project_detail_list">
+                <li>Users are able to create their own portfolio with a location tag</li>
+                <li>Users are able to discover inspiration posts from around the world based on most recent postings</li>
+                <li>Users are able to discover trades around them based on their current location</li>
+                <li>Users are able to contact other users via email for trades that interests them</li>
+                <li>Users are able to post plants for sell or for trade with geospatial tag and offer details</li>
+                <li>Users are able to post photos of plant inspiration with geospatial tag and description</li>
+                <li>Users are able to search for plants through all posts</li>
+                <li>Users are able to delete any posts they own</li>
+                <li>Users are able to view other users’ profile with their posts separated by trade or inspiration</li>
+              </ul>
+              <h3 className="project_left_detail_title">Contributions:</h3>
+              <p className="project_detail_subtitle">Built the app from ideation to deployment in less than a week.</p>
+              <ul className="project_detail_list">
+                <li>Mapped out data flow and wireframed the design and display information</li>
+                <li>Built the API endpoints and database for user and posts information</li>
+                <li>Used MongoDB and geospatial coordinates to filter posts for nearby trades</li>
+                <li>Built react components to be reused throughout the whole website</li>
+                <li>Built and tested input forms for error-handling and validation</li>
+              </ul>
+            </div>
+
+          
+            
+
             <h1 className="section_title project_title">SELECT PROJECTS</h1>
-            <h3 className="section_title">Check Github for Details</h3>
+            <h3 className="project_checkout">Details on Github</h3>
             <div id="projects" className="projects">
               <div className="mock1" id="plantiful">
                 <div className="project_body_left"></div>
                 <div className="project_left_content">
                   <h1 className="project_left_name">Plantiful - Web Application</h1>
-                  <p className="project_left_description">An application built for the plant loving communities to inspire and plant </p>
-                  {/* <button type="button" className="details button">More Details >></button> */}
+                  <p className="project_left_description">A responsive web application designed for the plant-loving community. Users are able to connect with nearby users to sell or trade their plant collection or to share their plant inspirations globally. </p>
+                  <p className="project_left_description"><span className="yellow">[</span>React, Next.JS, Next.JS API, Redux, SASS, MongoDB, Mongoose, Firebase<span className="yellow">]</span></p>
+                  <div className="details bounce">>></div>
+                </div>
+                <div className="project_detail">
+                  <h3 className="project_detail_title">User Stories:</h3>
+                  <ul>
+                    <li>Users are able to create their own portfolio with a location tag</li>
+                    <li>Users are able to discover inspiration posts from around the world based on most recent postings</li>
+                    <li>Users are able to discover trades around them based on their current location</li>
+                    <li>Users are able to contact other users via email for trades that interests them</li>
+                    <li>Users are able to post plants for sell or for trade with geospatial tag and offer details</li>
+                    <li>Users are able to post photos of plant inspiration with geospatial tag and description</li>
+                    <li>Users are able to search for plants through all posts</li>
+                    <li>Users are able to delete any posts they own</li>
+                    <li>Users are able to view other users’ profile with their posts separated by trade or inspiration</li>
+                  </ul>
+                  <h3 className="project_detail_title">Contributions:</h3>
+                  <p>Built the app from ideation to deployment in less than a week.</p>
+                  <ul>
+                    <li>Mapped out data flow and wireframed the design and display information</li>
+                    <li>Built the API endpoints and database for user and posts information</li>
+                    <li>Used MongoDB and geospatial coordinates to filter posts for nearby trades</li>
+                    <li>Built react components to be reused throughout the whole website</li>
+                    <li>Built and tested input forms for error-handling and validation</li>
+                  </ul>
                 </div>
                 <img className="mock_plantiful" id="plantiful_mock" src="./images/mock_plantiful.png" />
               </div>
