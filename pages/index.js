@@ -363,7 +363,7 @@ export default function Home() {
                 </ul>
               </div>
               <div className="tech_column">
-                <h3 className="tech_column_title">Other</h3>
+                <h3 className="tech_column_title">General</h3>
                 <ul className="tech_column_list">
                   <li className="tech_list">Jest</li>
                   <li className="tech_list">Mocha</li>
@@ -372,6 +372,15 @@ export default function Home() {
                   <li className="tech_list">Auth</li>
                 </ul>
               </div>
+            </div>
+
+            <div className="contact" id="contact">
+            <h3 className="section_title">Let's discuss ideas over coffee!</h3>
+            <div className="contact_info contact_line">
+              <a className="contact_social" href = "mailto: louisa.wy.wong@gmail.com?subject=Let's%20Connect!"><img className="nav_icon contact_icon" src="./images/mail_white_48dp.svg"/> louisa.wy.wong@gmail.com</a>
+              <a className="contact_social"  href="https://github.com/louisawong" target="_blank"><img className="nav_icon contact_icon" src="./images/GitHub-Mark-Light-120px-plus.png"/> Browse more projects </a>
+              <a className="contact_social"  href="https://www.linkedin.com/in/louisa-wy-wong/" target="_blank"><img className="nav_icon contact_icon" src="./images/LI-In-Bug.png"/> Connect with me</a>
+            </div>
             </div>
 
       

@@ -1,0 +1,31 @@
+.contact {
+    width: 100vw;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin: 10vh 0;
+}
+
+.contact_line {
+    border-top: 3px solid var(--accent_blue);
+}
+
+.contact_info {
+    display: flex;
+    flex-direction: column;
+    width:fit-content;
+}
+
+.contact_icon {
+    filter: grayscale(100%) brightness(100);
+    margin: 20px;
+}
+
+.contact_social {
+    align-items: center;
+    display: flex;
+
+}

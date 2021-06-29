@@ -1,14 +1,14 @@
 .tech_panel {
-    width: 100%;
+    width: calc(100% - 6vh);
     height: fit-content;
     display: flex;
     justify-content: space-around;
-    margin-bottom: 3vh;
+    margin: 0 3vh 3vh 3vh;
 }
 
 .tech_column {
     background-color: var(--dark);
-    width: 30vw;
+    width: 28vw;
     text-align: center;
     padding:3vh;
 }
@@ -27,4 +27,5 @@
     list-style:circle;
     text-align: left;
     font-size: 1em;
+    font-weight: 300;
 }
