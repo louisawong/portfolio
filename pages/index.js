@@ -186,7 +186,7 @@ export default function Home() {
               </div>
             </div>
             
-            <h1 className="section_title">SELECT PROJECTS</h1>
+            <h1 className="section_title" id="projects">SELECT PROJECTS</h1>
             <h3 className="section_subtitle yellow">Details on Github</h3>
             <div className="project_left_wrapper">
               <div className="project_left">
@@ -222,7 +222,7 @@ export default function Home() {
               </ul>
             </div>
             
-            <div className="project_right_wrapper gap">
+             <div className="project_right_wrapper gap">
               <img className="project_left_mock" src="./images/mock_fitome.png" />
               <div className="project_right">
                 <h1 className="project_left_title">Fitome – Progressive Web Application</h1>
@@ -317,18 +317,19 @@ export default function Home() {
             </div>
             
             <h1 className="section_title">ABOUT ME</h1>
-            <div id="about" className="about">
-              <div className="profile_wrapper"> 
-                <div className="profile_decor"></div>
-                <div className="profile">
-                  <img className="profile_main" src="./images/portfolio_2.jpg"/>
-                  <img className="profile_hover" src="./images/portfolio_1.jpg"/>
-                </div>
+
+            <div className="about_wrapper" id="about"> 
+              <div className="profile" >
+                    <img className="profile_main" src="./images/portfolio_2.jpg"/>
+                    <img className="profile_hover" src="./images/portfolio_1.jpg"/>
               </div>
-              <div className="about_body_right">
-                  <p className="project_left_description">An applicationhjcbcsjnsknjcnjkjnknjsnkkjn</p>
+              <div className="about_right">
+                <h1 className="project_left_title">Hey, I'm Louisa</h1>
+                <p className="project_left_info">My passion for programming started in 2012 when I first discovered Java to create a simple online self-driving robot that learns how to navigate and shoots on its own for a school competition. Now, I’m a full stack engineer that loves to turn ideas into  beautiful online spaces.</p>
+                <p className="project_left_info">As I studied and worked in Marketing, it allows me to plan and develop with a user-driven mindset. I enjoy writing code that solves real-life problem by merging functionality and creativity together. I love a good challenge and to problem solve, it’s all about looking at it from different perspectives and breaking it down into bit-size pieces.</p>
+                <p className="project_left_info">When I’m not coding, you can either find me in a coffee shop or in the craft room getting my hands on my next project. Let’s grab a coffee and discuss ideas!</p>
               </div>
-            </div>
+            </div> 
 
             <div id="tech">
               <h1 className="section_title">TECHNOLOGIES</h1>

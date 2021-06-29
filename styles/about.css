@@ -1,13 +1,30 @@
-.about {
-    height: calc(200px + 3vh);
-    margin-bottom: 30px;
+.about_wrapper {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
 }
 
-.about_body_right {
-    transform: skewX(-10deg) translateX(35vw) translateY(calc(-210px - 3vh));
-    width: 100vw;
-    height: 200px;
-    background: var(--dark);  
+.about_right {
+    height: fit-content;
+    width: 60vw;
+    background-color: var(--dark);
+    position: relative;
+    z-index: 2;
+    padding: 3vh;
+}
+
+.about_right:before{
+    content: " ";
+    background-color: var(--dark);
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position:absolute;
+    top: 0;
+    left: -10vw;
+    transform: skewX(-10deg);
+    z-index: -1;
 }
 
 .profile_wrapper {
@@ -16,8 +33,7 @@
 
 .profile {
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 40vw;
      
     /* border: 3px solid white; */
     /* z-index: 999; */
@@ -27,15 +43,17 @@
 }
 
 .profile_main {
-    width: 200px;
-    height: 200px;
+    /* width: 200px;
+    height: 200px; */
+    height: 30vw;
+    max-height: 300px;
     object-fit: cover;
     border: 3px solid white;
 }
 
 .profile_hover {
-    width: 200px;
-    height: 200px;
+    height: 30vw;
+    max-height: 300px;
     object-fit: cover;
     z-index: 999;
     position:absolute;
