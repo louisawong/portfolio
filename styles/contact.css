@@ -1,5 +1,6 @@
 .contact {
     width: 100vw;
+    position: relative;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -35,5 +36,12 @@
 .contact_social {
     align-items: center;
     display: flex;
+}
 
+.coffee_stain {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 200px;
+    z-index: -1;
 }

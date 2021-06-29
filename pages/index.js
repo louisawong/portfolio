@@ -331,8 +331,8 @@ export default function Home() {
             <div className="about_wrapper" > 
               <div className="profile_wrapper">
                 <div className="profile" >
-                      <img className="profile_main" src="./images/portfolio_2.jpg"/>
-                      <img className="profile_hover" src="./images/portfolio_1.jpg"/>
+                      <img className="profile_hover" src="./images/portfolio_2.jpg"/>
+                      <img className="profile_main" src="./images/portfolio_2_bw.jpg"/>
                 </div>
               </div>
               <div className="about_right">
@@ -384,6 +384,7 @@ export default function Home() {
             </div>
 
             <div className="contact" id="contact">
+            <img className="coffee_stain" src="/images/coffee_stain.png"/>
             <h3 className="contact_title">Let's discuss ideas over coffee!</h3>
             <div className="contact_info contact_line">
               <a className="contact_social" href = "mailto: louisa.wy.wong@gmail.com?subject=Let's%20Connect!"><img className="nav_icon contact_icon" src="./images/mail_white_48dp.svg"/> louisa.wy.wong@gmail.com</a>

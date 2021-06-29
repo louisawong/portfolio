@@ -45,7 +45,7 @@
     max-height: 400px;
     object-fit: cover;
     border: 3px solid white;
-    transform: translateY(2.5vh);
+    transform: translateY(2.5vh) brightness(180%);
 }
 
 .profile_hover {
