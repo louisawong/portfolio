@@ -331,8 +331,8 @@ export default function Home() {
             <div className="about_wrapper" > 
               <div className="profile_wrapper">
                 <div className="profile" >
-                      <img className="profile_hover" src="./images/portfolio_2.jpg"/>
                       <img className="profile_main" src="./images/portfolio_2_bw.jpg"/>
+                      <img className="profile_hover" src="./images/portfolio_2.jpg"/>
                 </div>
               </div>
               <div className="about_right">
