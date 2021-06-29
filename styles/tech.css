@@ -1,4 +1,30 @@
-.texh_panel {
+.tech_panel {
     width: 100%;
     height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3vh;
+}
+
+.tech_column {
+    background-color: var(--dark);
+    width: 30vw;
+    text-align: center;
+    padding:3vh;
+}
+
+.tech_column_title {
+    margin:0;
+    font-weight: 500;
+    font-size: 2em;
+    color: var(--accent_blue)
+}
+.tech_column_list {
+    text-align: left;
+}
+
+.tech_list {
+    list-style:circle;
+    text-align: left;
+    font-size: 1em;
 }

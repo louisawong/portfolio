@@ -319,9 +319,9 @@ export default function Home() {
             </div>
             </div>
             
-            <h1 className="section_title">ABOUT ME</h1>
+            <h1 className="section_title" id="about">ABOUT ME</h1>
 
-            <div className="about_wrapper" id="about"> 
+            <div className="about_wrapper" > 
               <div className="profile" >
                     <img className="profile_main" src="./images/portfolio_2.jpg"/>
                     <img className="profile_hover" src="./images/portfolio_1.jpg"/>
@@ -334,17 +334,50 @@ export default function Home() {
               </div>
             </div> 
 
-            <div id="tech">
-              <h1 className="section_title">TECHNOLOGIES</h1>
-              <div className="project_body_left">
+            <h1 className="section_title" id="tech">TECHNOLOGIES</h1>
+            <div className="tech_panel">
+              <div className="tech_column">
+                <h3 className="tech_column_title">Frontend</h3>
+                <ul className="tech_column_list">
+                  <li className="tech_list">JavaScript</li>
+                  <li className="tech_list">TypeScript</li>
+                  <li className="tech_list">React</li>
+                  <li className="tech_list">Angular</li>
+                  <li className="tech_list">RxJS</li>
+                  <li className="tech_list">Redux</li>
+                  <li className="tech_list">SASS</li>
+                </ul>
+              </div>
+              <div className="tech_column">
+                 <h3 className="tech_column_title">Backend</h3>
+                 <ul className="tech_column_list">
+                  <li className="tech_list">NodeJS</li>
+                  <li className="tech_list">Express</li>
+                  <li className="tech_list">Koa</li>
+                  <li className="tech_list">GraphQL</li>
+                  <li className="tech_list">MongoDB</li>
+                  <li className="tech_list">Mongoose</li>
+                  <li className="tech_list">PostgreSQL</li>
+                  <li className="tech_list">Sequelize</li>
+                  <li className="tech_list">REST</li>
+                </ul>
+              </div>
+              <div className="tech_column">
+                <h3 className="tech_column_title">Other</h3>
+                <ul className="tech_column_list">
+                  <li className="tech_list">Jest</li>
+                  <li className="tech_list">Mocha</li>
+                  <li className="tech_list">SuperTest</li>
+                  <li className="tech_list">Git</li>
+                  <li className="tech_list">Auth</li>
+                </ul>
               </div>
             </div>
 
-          {/* </div> */}
       
       </main>
       
     </div>
   )
 }
-              <div className="logo">Logo</div>
+
