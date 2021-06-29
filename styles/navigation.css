@@ -1,6 +1,6 @@
 .navigation {
     width: 100vw;
-    padding: 3vh;
+    padding: 6vh;
     display: flex;
     justify-content: flex-end;
 
@@ -15,7 +15,7 @@
     height: 130px;
     top: 0;
     left: 0;
-    margin: 3vh;
+    margin: 6vh;
     filter: grayscale(100%) brightness(100);
 }
 
@@ -25,13 +25,13 @@
 }
 
 .resume {
-    transform: translateX(-60px);
+    transform: translateX(-80px);
 }
 
 .hamburger_menu {
     position: absolute;
-    top: calc(3vh + 12px);
-    right: 3vh;
+    top: calc(6vh + 12px);
+    right: 6vh;
     display: flex;
     align-items: center;
     justify-content: center;

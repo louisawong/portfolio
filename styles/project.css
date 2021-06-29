@@ -17,11 +17,11 @@
 
 .project_left {
     height: fit-content;
-    width: 70vw;
+    width: 60vw;
     background-color: var(--dark);
     position: relative;
     z-index: 2;
-    padding: 3vh;
+    padding: 6vh;
 }
 
 .project_left:after {
@@ -39,11 +39,11 @@
 
 .project_right {
     height: fit-content;
-    width: 70vw;
+    width: 60vw;
     background-color: var(--dark);
     position: relative;
     z-index: 2;
-    padding: 3vh;
+    padding: 6vh;
 }
 
 .project_right:before{
@@ -72,6 +72,7 @@
     font-weight: 300;
     font-size: 1em;
     color: white;
+    line-height: 2em;
 }
 
 .project_left_tech {

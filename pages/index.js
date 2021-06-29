@@ -322,12 +322,14 @@ export default function Home() {
             <h1 className="section_title" id="about">ABOUT ME</h1>
 
             <div className="about_wrapper" > 
-              <div className="profile" >
-                    <img className="profile_main" src="./images/portfolio_2.jpg"/>
-                    <img className="profile_hover" src="./images/portfolio_1.jpg"/>
+              <div className="profile_wrapper">
+                <div className="profile" >
+                      <img className="profile_main" src="./images/portfolio_2.jpg"/>
+                      <img className="profile_hover" src="./images/portfolio_1.jpg"/>
+                </div>
               </div>
               <div className="about_right">
-                <h1 className="project_left_title">Hey, I'm Louisa</h1>
+                <h1 className="about_title">Hey, I'm Louisa</h1>
                 <p className="project_left_info">My passion for programming started in 2012 when I first discovered Java to create a simple online self-driving robot that learns how to navigate and shoots on its own for a school competition. Now, I’m a full stack engineer that loves to turn ideas into  beautiful online spaces.</p>
                 <p className="project_left_info">As I studied and worked in Marketing, it allows me to plan and develop with a user-driven mindset. I enjoy writing code that solves real-life problem by merging functionality and creativity together. I love a good challenge and to problem solve, it’s all about looking at it from different perspectives and breaking it down into bit-size pieces.</p>
                 <p className="project_left_info">When I’m not coding, you can either find me in a coffee shop or in the craft room getting my hands on my next project. Let’s grab a coffee and discuss ideas!</p>
@@ -375,13 +377,17 @@ export default function Home() {
             </div>
 
             <div className="contact" id="contact">
-            <h3 className="section_title">Let's discuss ideas over coffee!</h3>
+            <h3 className="contact_title">Let's discuss ideas over coffee!</h3>
             <div className="contact_info contact_line">
               <a className="contact_social" href = "mailto: louisa.wy.wong@gmail.com?subject=Let's%20Connect!"><img className="nav_icon contact_icon" src="./images/mail_white_48dp.svg"/> louisa.wy.wong@gmail.com</a>
               <a className="contact_social"  href="https://github.com/louisawong" target="_blank"><img className="nav_icon contact_icon" src="./images/GitHub-Mark-Light-120px-plus.png"/> Browse more projects </a>
               <a className="contact_social"  href="https://www.linkedin.com/in/louisa-wy-wong/" target="_blank"><img className="nav_icon contact_icon" src="./images/LI-In-Bug.png"/> Connect with me</a>
             </div>
             </div>
+
+            <footer>
+              Coded with ♡ by Louisa Wong | © 2021
+            </footer>
 
       
       </main>

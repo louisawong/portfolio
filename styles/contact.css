@@ -1,12 +1,20 @@
 .contact {
     width: 100vw;
-    height: 250px;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     text-align: center;
     margin: 10vh 0;
+}
+
+.contact_title {
+    font-weight: 700;
+    font-size: 2em;
+    letter-spacing: 2px;
+    margin:0;
+    padding-bottom: 6vh;
 }
 
 .contact_line {
