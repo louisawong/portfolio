@@ -197,7 +197,10 @@ export default function Home() {
                 <p className="project_left_tech"><span className="yellow">[</span>React, Next.JS, Next.JS API, Redux, SASS, MongoDB, Mongoose, Firebase<span className="yellow">]</span></p>
                 <div className="project_left_arrow bounce" onClick={()=>detailHandler("plantiful")}>>></div>
               </div>
+              <div className="project_mock_wrapper">
               <img className="project_left_mock" src="./images/mock_plantiful.png" />
+
+              </div>
             </div>
             <div className="project_left_detail" id="detail_plantiful">
             <div className="project_detail_exit" onClick={()=>detailHandler("plantiful")}>X</div>
@@ -225,7 +228,9 @@ export default function Home() {
             </div>
             
              <div className="project_right_wrapper gap">
+             <div className="project_mock_wrapper">
               <img className="project_left_mock" src="./images/mock_fitome.png" />
+              </div>
               <div className="project_right">
                 <h1 className="project_left_title">Fitome – Progressive Web Application</h1>
                 <p className="project_left_info">A  management tool for personal trainers to connect with their clients during the pandemic and even afterwards. A tool for personal trainers to assign workout regimens and to schedule video calls for workouts and checkups with their clients directly on the app. Clients are able to view workouts and join their scheduled video calls on the client-side application.</p>
@@ -280,7 +285,9 @@ export default function Home() {
                 <p className="project_left_tech"><span className="yellow">[</span>TypeScript, Jest, React Testing Library, SuperTest, React, Next.JS, Express, MongoDB, Mongoose, Firebase<span className="yellow">]</span></p>
                 <div className="project_left_arrow bounce" onClick={()=>detailHandler("cardshare")}>>></div>
               </div>
-              <img className="project_left_mock" src="./images/mock_cardshare.png"  />
+              <div className="project_mock_wrapper">
+                <img className="project_left_mock" src="./images/mock_cardshare.png"  />
+              </div>
             </div>
             <div className="project_left_detail" id="detail_cardshare">
             <div className="project_detail_exit" onClick={()=>detailHandler("cardshare")}>X</div>

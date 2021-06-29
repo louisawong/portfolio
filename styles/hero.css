@@ -36,7 +36,7 @@
 .cursor {
     font-size: 2.5em;
     font-weight: 500;
-    color: #4e8791;
+    color: var(--accent_blue);
     /* color: rgb(204, 204, 204); */
 }
 
