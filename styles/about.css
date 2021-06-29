@@ -27,14 +27,13 @@
     z-index: -1;
 }
 
-.profile_wrapper {
-    position: relative;
-}
-
 .profile {
     position: relative;
     width: 40vw;
-     
+    /* background-color: pink; */
+    display: flex;
+    justify-content:center;
+    z-index: 3;
     /* border: 3px solid white; */
     /* z-index: 999; */
     margin: 3vh 0 0 3vh;

@@ -1,20 +1,23 @@
+.projects {
+    width: 100vw;
+}
+
 .project_left_wrapper{
     display: flex;
     width: 100%;
-    justify-content: center;
     align-items: center;
 }
 
 .project_right_wrapper{
     display: flex;
     width: 100%;
-    justify-content: center;
     align-items: center;
+    justify-content: flex-end;
 }
 
 .project_left {
     height: fit-content;
-    width: 75vw;
+    width: 70vw;
     background-color: var(--dark);
     position: relative;
     z-index: 2;
@@ -36,7 +39,7 @@
 
 .project_right {
     height: fit-content;
-    width: 75vw;
+    width: 70vw;
     background-color: var(--dark);
     position: relative;
     z-index: 2;
@@ -105,7 +108,7 @@
 }
 
 .project_left_mock {
-    height: 25vw;
+    height: 30vw;
     max-height: 180px;
     z-index: 3;
 }

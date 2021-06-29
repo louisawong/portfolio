@@ -148,7 +148,7 @@ export default function Home() {
 
       <main id="main" className="main">
           
-          <div className="hero">
+          {/* <div className="hero"> */}
             <div className="navigation">
               <div id ="navigation_icons" className="navigation_icons">
                 <a href="https://github.com/louisawong" target="_blank"><img className="nav_icon" src="./images/GitHub-Mark-Light-120px-plus.png"/></a>
@@ -185,9 +185,11 @@ export default function Home() {
                 <div id="cursor" className="cursor cursorActive">|</div>
               </div>
             </div>
+           
             
             <h1 className="section_title" id="projects">SELECT PROJECTS</h1>
             <h3 className="section_subtitle yellow">Details on Github</h3>
+            <div className="projects">
             <div className="project_left_wrapper">
               <div className="project_left">
                 <h1 className="project_left_title">Plantiful - Web Application</h1>
@@ -315,6 +317,7 @@ export default function Home() {
                 </li>
               </ul>
             </div>
+            </div>
             
             <h1 className="section_title">ABOUT ME</h1>
 
@@ -337,7 +340,7 @@ export default function Home() {
               </div>
             </div>
 
-          </div>
+          {/* </div> */}
       
       </main>
       
