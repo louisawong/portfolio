@@ -4,7 +4,7 @@
         justify-content: center;
         align-items: center;
         background-color: var(--dark);
-        padding: 6vh 0;
+        padding: 9vh 0 6vh 0;
 }
 
 .about_right {
@@ -35,23 +35,25 @@
     /* z-index: 999; */
     /* margin: 3vh 0 0 3vh; */
     /* -webkit-filter: grayscale(100%); */
+    margin:auto;
+    width: 75%;
     filter: drop-shadow(2.5vh -2.5vh 0px var(--accent_blue));
 }
 
 .profile_main {
     /* width: 200px;
     height: 200px; */
-    height: 30vw;
-    max-height: 400px;
+    /* height: 30vw; */
+    width: 100%;
+    /* max-height: 400px; */
     object-fit: cover;
+    /* margin:auto; */
     border: 3px solid white;
-    transform: translateY(2.5vh) brightness(180%);
 }
 
 .profile_hover {
     /* transform: translateY(2.5vh); */
-    height: 30vw;
-    max-height: 400px;
+    width:100%;
     object-fit: cover;
     z-index: 999;
     position:absolute;

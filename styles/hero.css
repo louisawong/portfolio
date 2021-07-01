@@ -49,3 +49,15 @@
     color: transparent;
   }
 }
+
+@media only screen and (max-width: 768px) {
+    .hero_text_name {
+        margin-top: 6vh;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .fullname {
+        font-size: 2em;
+    }
+}

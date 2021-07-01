@@ -10,23 +10,9 @@ export default function Home() {
 
   useEffect(()=>{
     descriptionAnimation();
-    //coffee();
   }
   ,[])
 
-  // function coffee () {
-  //   let wheight = window.innerHeight;
-  //   let wwidth = window.innerWidth;
-  //   let scrollArea = 1000 - wheight;
-  //   let coffee = document.getElementById("coffee_mug")
-
-  //   window.addEventListener("scroll", () => {
-  //     let scrollTop = window.pageYOffset || window.scrollTop;
-  //     let scrollPercent = scrollTop/scrollArea || 0;
-  //     coffee.style.right = scrollPercent*window.innerWidth + 'px';
-  //     console.log(scrollPercent,coffee.style.right)
-  //   })
-  // }
 
   function descriptionAnimation () {
     const contentList = [
@@ -153,6 +139,7 @@ export default function Home() {
                   <a className="hamburger_choices_option" onClick={menuHandler} href="#about">About Me</a>
                   <a className="hamburger_choices_option" onClick={menuHandler} href="#tech">Technologies</a>
                   <a className="hamburger_choices_option" onClick={menuHandler} href="#contact">Contact Me</a>
+                  <a href="./files/Louisa_Wong_Resume_June_2021.pdf" download className="hamburger_choices_option">Download Resume</a>
                   <div className="hamburger_choices_social">
                     <a href="https://github.com/louisawong" target="_blank"><img className="nav_icon" src="./images/GitHub-Mark-Light-120px-plus.png"/></a>
                     <a href="https://www.linkedin.com/in/louisa-wy-wong/" target="_blank"><img className="nav_icon" src="./images/LI-In-Bug.png"/></a>

@@ -6,6 +6,7 @@
     display: flex;
     width: 100%;
     align-items: center;
+    justify-content: space-between;
 }
 
 .project_right_wrapper{
@@ -109,8 +110,8 @@
 }
 
 .project_left_mock {
-    height: 100%;
-    max-height: 250px;
+    width:100%;
+    transform: scale(1.5)
 }
 
 .project_body_mock {
@@ -123,13 +124,13 @@
 }
 
 .project_mock_wrapper {
-    width: 40vw;
+    width: 30vw;
     height: 100%;
     z-index: 3;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-right: 6vh;
+    margin-right: 6vh;
 }
 
 .project_left_detail {
