@@ -10,35 +10,23 @@ export default function Home() {
 
   useEffect(()=>{
     descriptionAnimation();
-    //scroll();
+    //coffee();
   }
   ,[])
 
+  // function coffee () {
+  //   let wheight = window.innerHeight;
+  //   let wwidth = window.innerWidth;
+  //   let scrollArea = 1000 - wheight;
+  //   let coffee = document.getElementById("coffee_mug")
 
-  function getOffset(el) {
-    const rect = el.getBoundingClientRect();
-    return {
-      left: rect.left + window.scrollX,
-      top: rect.top + window.scrollY
-    };
-  }
-
-  function scroll () {
-    let plantiful = document.getElementById("plantiful");
-    let plantiful_mock = document.getElementById("plantiful_mock")
-    let fitome = document.getElementById("fitome");
-    const fitomeTop = getOffset(fitome).top;
-    
-    console.log("TOP: ", fitomeTop)
-    
-    window.addEventListener("scroll", function () {
-      let value = window.scrollY;
-      plantiful.style.right=value*0.25+'px';
-      // plantiful_mock.style.bottom=value*0.25+'px';
-      fitome.style.left = value*0.25+'px';
-
-    })
-  }
+  //   window.addEventListener("scroll", () => {
+  //     let scrollTop = window.pageYOffset || window.scrollTop;
+  //     let scrollPercent = scrollTop/scrollArea || 0;
+  //     coffee.style.right = scrollPercent*window.innerWidth + 'px';
+  //     console.log(scrollPercent,coffee.style.right)
+  //   })
+  // }
 
   function descriptionAnimation () {
     const contentList = [
@@ -195,6 +183,7 @@ export default function Home() {
                 <h1 className="project_left_title">Plantiful - Web Application</h1>
                 <p className="project_left_info">A responsive web application designed for the plant-loving community. Users are able to connect with nearby users to sell or trade their plant collection or to share their plant inspirations globally.</p>
                 <p className="project_left_tech"><span className="yellow">[</span>React, Next.JS, Next.JS API, Redux, SASS, MongoDB, Mongoose, Firebase<span className="yellow">]</span></p>
+                <img className="project_body_mock" src="./images/mock_plantiful.png" />
                 <div className="project_left_arrow bounce" onClick={()=>detailHandler("plantiful")}>>></div>
               </div>
               <div className="project_mock_wrapper">
@@ -235,6 +224,7 @@ export default function Home() {
                 <h1 className="project_left_title">Fitome – Progressive Web Application</h1>
                 <p className="project_left_info">A  management tool for personal trainers to connect with their clients during the pandemic and even afterwards. A tool for personal trainers to assign workout regimens and to schedule video calls for workouts and checkups with their clients directly on the app. Clients are able to view workouts and join their scheduled video calls on the client-side application.</p>
                 <p className="project_left_tech"><span className="yellow">[</span>Peer2Peer, Socket.io, Google WorkBox, Express, PostgreSQL, Sequelize, Redux, React, Next.JS, Firebase<span className="yellow">]</span></p>
+                <img className="project_body_mock" src="./images/mock_fitome.png" />
                 <div className="project_left_arrow bounce" onClick={()=>detailHandler("fitome")}>>></div>
               </div>
             </div>
@@ -283,6 +273,7 @@ export default function Home() {
                 <h1 className="project_left_title">CardShare - Web Application</h1>
                 <p className="project_left_info">A flashcard sharing site made for booklovers to retain and share knowledge.</p>
                 <p className="project_left_tech"><span className="yellow">[</span>TypeScript, Jest, React Testing Library, SuperTest, React, Next.JS, Express, MongoDB, Mongoose, Firebase<span className="yellow">]</span></p>
+                <img className="project_body_mock" src="./images/mock_cardshare.png"  />
                 <div className="project_left_arrow bounce" onClick={()=>detailHandler("cardshare")}>>></div>
               </div>
               <div className="project_mock_wrapper">
@@ -343,7 +334,8 @@ export default function Home() {
               </div>
             </div> 
 
-            <h1 className="section_title" id="tech">TECHNOLOGIES</h1>
+            <div className="tech_section" id="tech">
+            <h1 className="section_title">TECHNOLOGIES</h1>
             <div className="tech_panel">
               <div className="tech_column">
                 <h3 className="tech_column_title">Frontend</h3>
@@ -382,9 +374,12 @@ export default function Home() {
                 </ul>
               </div>
             </div>
+            </div>
 
             <div className="contact" id="contact">
-            <img className="coffee_stain" src="/images/coffee_stain.png"/>
+              
+                <img className="coffee_mug show_onscroll" id="coffee_mug" src="/images/coffee_mug.png"/>
+                <img className="coffee_stain" src="/images/coffee_stain.png"/>
             <h3 className="contact_title">Let's discuss ideas over coffee!</h3>
             <div className="contact_info contact_line">
               <a className="contact_social" href = "mailto: louisa.wy.wong@gmail.com?subject=Let's%20Connect!"><img className="nav_icon contact_icon" src="./images/mail_white_48dp.svg"/> louisa.wy.wong@gmail.com</a>

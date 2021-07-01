@@ -86,7 +86,7 @@
     width: 100vw;
     height: calc(100vh - 60px);
     position: absolute;
-    top: calc(3vh + 50px);
+    top: calc(6vh + 50px);
     right: 0;
     background-color: var(--accent_blue);
     display: none;
@@ -112,7 +112,7 @@
 
 .hamburger_choices_option {
     margin: 20px;
-    font-size: 1em;
+    font-size: 2em;
 }
 
 .hamburger_choices_social {
@@ -123,4 +123,10 @@
     margin: 20px;
     transition: all 0.5s ease-in-out;
     filter: grayscale(100%) brightness(100);
+}
+
+@media only screen and (max-width: 768px) {
+    .navigation_icons {
+        display: none;
+    }
 }

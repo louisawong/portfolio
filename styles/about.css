@@ -49,7 +49,7 @@
 }
 
 .profile_hover {
-    transform: translateY(2.5vh);
+    /* transform: translateY(2.5vh); */
     height: 30vw;
     max-height: 400px;
     object-fit: cover;
@@ -79,4 +79,37 @@
     font-weight: 700;
     margin: 0;
     padding-bottom: 3vh;
+}
+
+@media only screen and (max-width: 768px) {
+    .about_wrapper {
+        flex-direction: column;
+        display: table;
+        padding: 6vh;
+    }
+    .profile_wrapper {
+        display: table-footer-group flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: 6vh;
+        padding:0;
+        width: 100%;
+    }
+    .about_right {
+        display:table-header-group;
+    }
+    .profile {
+        width: fit-content;
+    }
+    .profile_main, .profile_hover {
+        width: 50vw;
+        height: 50vw;
+    }
+    
+
+    /* .profile_main,.profile_hover {
+        width: 50%;
+        height: auto;
+    } */
 }

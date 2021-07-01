@@ -113,6 +113,15 @@
     max-height: 250px;
 }
 
+.project_body_mock {
+    width: 70vw;
+    height: auto;
+    /* max-height: 150px; */
+    margin-bottom:20px;
+    display:none;
+    margin-right:0;
+}
+
 .project_mock_wrapper {
     width: 40vw;
     height: 100%;
@@ -164,4 +173,21 @@
 
 .detail_open {
     display: block;
+}
+
+@media only screen and (max-width: 768px) {
+    .project_left_mock {
+        display: none;
+    }
+    .project_body_mock {
+        display: flex;
+    }
+    .project_left {
+        width: 200vw;
+        padding-right:0;
+    }
+    .project_right {
+        width: 200vw;
+        /* padding-left:0; */
+    }
 }
