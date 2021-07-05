@@ -11,7 +11,7 @@
     /* text-align: center; */
     border-left: 3px solid white;
     padding: 0 6vh;
-    padding-right: 12vh
+    /* padding-right: 12vh */
     /* display: flex;
     flex-direction: column;
     align-items: center; */
@@ -46,6 +46,7 @@
         justify-content: flex-start;
         align-items: flex-start;
         margin:0;
+        margin-left: 0;
     }
     .tech_column {
         margin-bottom: 20px;
@@ -56,7 +57,21 @@
     .tech_section {
         display: flex;
         align-items: center;
-        justify-content: left;
+        justify-content: left; 
         margin-top: 6vh;
     }
+}
+
+@media only screen and (max-width: 600px) {
+  .tech_section {
+      justify-content: center;
+      flex-direction: column;
+  }
+  .tech_panel {
+      /* margin-left: 6vh; */
+      justify-content: center;
+      /* align-items: center; */
+      display: flex;
+      width: fit-content;
+  }
 }

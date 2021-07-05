@@ -78,7 +78,8 @@
   .about_title {
     font-size: 2em;
     color: var(--accent_blue);
-    font-weight: 700;
+    /* font-weight: 700; */
+    font-weight: 500;
     margin: 0;
     padding-bottom: 3vh;
 }
@@ -115,3 +116,13 @@
         height: auto;
     } */
 }
+
+@media only screen and (max-width: 600px) {
+    .about_title{
+      margin:auto;
+      width: fit-content;
+    }
+    .about_right {
+        text-align: center;
+    }
+  }

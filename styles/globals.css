@@ -98,3 +98,16 @@ footer {
   font-size: 0.8em;
   font-weight: 500;
 }
+
+@media only screen and (max-width: 600px) {
+  .section_title {
+    margin:auto;
+    /* width: fit-content; */
+    font-size: 1.5em;
+  }
+  .section_subtitle {
+    font-size: 1em;
+    margin:auto;
+    width: fit-content;
+  }
+}
