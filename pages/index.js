@@ -127,10 +127,10 @@ export default function Home() {
               <div id ="navigation_icons" className="navigation_icons">
                 <a href="https://github.com/louisawong" target="_blank"><img className="nav_icon" src="./images/GitHub-Mark-Light-120px-plus.png"/></a>
                 <a href="https://www.linkedin.com/in/louisa-wy-wong/" target="_blank"><img className="nav_icon" src="./images/LI-In-Bug.png"/></a>
-                <a href = "mailto: louisa.wy.wong@gmail.com?subject=Let's%20Connect!"><img className="nav_icon" src="./images/mail_white_48dp.svg"/></a>
+                <a href = "mailto: louisawywong@gmail.com?subject=Let's%20Connect!"><img className="nav_icon" src="./images/mail_white_48dp.svg"/></a>
               </div>
               <div className="navigation_choice">
-                <a href="./files/Louisa_Wong_Resume_June_2021.pdf" download><button type="button" className="resume button" >Resume</button></a>
+                <a href="./files/Louisa_Wong_Resume_July_2021.pdf" download><button type="button" className="resume button" >Resume</button></a>
                 <div id="hamburger_menu" className="hamburger_menu" onClick={menuHandler}>
                   <div className="hamburger_menu_btn"></div>
                 </div>
@@ -139,11 +139,11 @@ export default function Home() {
                   <a className="hamburger_choices_option" onClick={menuHandler} href="#about">About Me</a>
                   <a className="hamburger_choices_option" onClick={menuHandler} href="#tech">Technologies</a>
                   <a className="hamburger_choices_option" onClick={menuHandler} href="#contact">Contact Me</a>
-                  <a href="./files/Louisa_Wong_Resume_June_2021.pdf" download className="hamburger_choices_option">Download Resume</a>
+                  <a href="./files/Louisa_Wong_Resume_July_2021.pdf" download className="hamburger_choices_option">Download Resume</a>
                   <div className="hamburger_choices_social">
                     <a href="https://github.com/louisawong" target="_blank"><img className="nav_icon" src="./images/GitHub-Mark-Light-120px-plus.png"/></a>
                     <a href="https://www.linkedin.com/in/louisa-wy-wong/" target="_blank"><img className="nav_icon" src="./images/LI-In-Bug.png"/></a>
-                    <a href = "mailto: louisa.wy.wong@gmail.com?subject=Let's%20Connect!"><img className="nav_icon" src="./images/mail_white_48dp.svg"/></a>
+                    <a href = "mailto: louisawywong@gmail.com?subject=Let's%20Connect!"><img className="nav_icon" src="./images/mail_white_48dp.svg"/></a>
                   </div>
                 </div>
 
@@ -369,7 +369,7 @@ export default function Home() {
                 <img className="coffee_stain" src="/images/coffee_stain.png"/>
             <h3 className="contact_title">Let's discuss ideas over coffee!</h3>
             <div className="contact_info contact_line">
-              <a className="contact_social" href = "mailto: louisa.wy.wong@gmail.com?subject=Let's%20Connect!"><img className="nav_icon contact_icon" src="./images/mail_white_48dp.svg"/> louisa.wy.wong@gmail.com</a>
+              <a className="contact_social" href = "mailto: louisawywong@gmail.com?subject=Let's%20Connect!"><img className="nav_icon contact_icon" src="./images/mail_white_48dp.svg"/> louisa.wy.wong@gmail.com</a>
               <a className="contact_social"  href="https://github.com/louisawong" target="_blank"><img className="nav_icon contact_icon" src="./images/GitHub-Mark-Light-120px-plus.png"/> Browse more projects </a>
               <a className="contact_social"  href="https://www.linkedin.com/in/louisa-wy-wong/" target="_blank"><img className="nav_icon contact_icon" src="./images/LI-In-Bug.png"/> Connect with me</a>
             </div>
