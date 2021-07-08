@@ -85,7 +85,14 @@
     color: rgb(202, 202, 202);
 }
 
-.project_left_arrow {
+.project_detail_arrow_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+}
+
+.project_detail_arrow {
     /* transform: rotate(90deg); */
     margin: 0;
     font-size: 2em;
@@ -96,7 +103,7 @@
     animation-iteration-count: infinite;
 }
 
-.project_left_arrow:hover {
+.project_detail_arrow:hover {
     cursor: pointer;
 }
 

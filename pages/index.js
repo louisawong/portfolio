@@ -122,19 +122,19 @@ export default function Home() {
 
       <main id="main" className="main">
           
-          {/* <div className="hero"> */}
+          
             <div className="navigation">
               <div id ="navigation_icons" className="navigation_icons">
                 <a href="https://github.com/louisawong" target="_blank"><img className="nav_icon" src="./images/GitHub-Mark-Light-120px-plus.png"/></a>
                 <a href="https://www.linkedin.com/in/louisa-wy-wong/" target="_blank"><img className="nav_icon" src="./images/LI-In-Bug.png"/></a>
                 <a href = "mailto: louisawywong@gmail.com?subject=Let's%20Connect!"><img className="nav_icon" src="./images/mail_white_48dp.svg"/></a>
               </div>
-              {/* <div className="navigation_choice"> */}
+             
                 <a  className="resume button" href="./files/Louisa_Wong_Resume_July_2021.pdf" download>Resume</a>
                 <div className="hamburger_wrapper" onClick={menuHandler}>
-                <div id="hamburger_menu" className="hamburger_menu" >
-                  <div className="hamburger_menu_btn"></div>
-                </div>
+                  <div id="hamburger_menu" className="hamburger_menu" >
+                    <div className="hamburger_menu_btn"></div>
+                  </div>
                 </div>
                 <div id="hamburger_choices" className="hamburger_choices">
                   <a className="hamburger_choices_option" onClick={menuHandler} href="#projects">Projects</a>
@@ -149,7 +149,6 @@ export default function Home() {
                   </div>
                 </div>
 
-              {/* </div> */}
             </div>
             <div className="hero_text">
               <div className="hero_text_name">
@@ -173,7 +172,10 @@ export default function Home() {
                 <p className="project_left_info">A responsive web application designed for the plant-loving community. Users are able to connect with nearby users to sell or trade their plant collection or to share their plant inspirations globally.</p>
                 <p className="project_left_tech"><span className="yellow">[</span>React, Next.JS, Next.JS API, Redux, SASS, MongoDB, Mongoose, Firebase<span className="yellow">]</span></p>
                 <img className="project_body_mock" src="./images/mock_plantiful.png" />
-                <div className="project_left_arrow bounce" onClick={()=>detailHandler("plantiful")}>>></div>
+                <div className="project_detail_arrow_wrapper">
+                  <div className="project_detail_arrow bounce" onClick={()=>detailHandler("plantiful")}>>></div>
+                  <div className="yellow">{"  More Detail"}</div>
+                </div>
               </div>
               <div className="project_mock_wrapper">
               <img className="project_left_mock" src="./images/mock_plantiful.png" />
@@ -214,7 +216,10 @@ export default function Home() {
                 <p className="project_left_info">A  management tool for personal trainers to connect with their clients during the pandemic and even afterwards. A tool for personal trainers to assign workout regimens and to schedule video calls for workouts and checkups with their clients directly on the app. Clients are able to view workouts and join their scheduled video calls on the client-side application.</p>
                 <p className="project_left_tech"><span className="yellow">[</span>Peer2Peer, Socket.io, Google WorkBox, Express, PostgreSQL, Sequelize, Redux, React, Next.JS, Firebase<span className="yellow">]</span></p>
                 <img className="project_body_mock" src="./images/mock_fitome.png" />
-                <div className="project_left_arrow bounce" onClick={()=>detailHandler("fitome")}>>></div>
+                <div className="project_detail_arrow_wrapper">
+                  <div className="project_detail_arrow bounce" onClick={()=>detailHandler("fitome")}>>> </div>
+                  <div className="yellow">{"  More Detail"}</div>
+                </div>
               </div>
             </div>
             <div className="project_left_detail" id="detail_fitome">
@@ -263,7 +268,10 @@ export default function Home() {
                 <p className="project_left_info">A flashcard sharing site made for booklovers to retain and share knowledge.</p>
                 <p className="project_left_tech"><span className="yellow">[</span>TypeScript, Jest, React Testing Library, SuperTest, React, Next.JS, Express, MongoDB, Mongoose, Firebase<span className="yellow">]</span></p>
                 <img className="project_body_mock" src="./images/mock_cardshare.png"  />
-                <div className="project_left_arrow bounce" onClick={()=>detailHandler("cardshare")}>>></div>
+                <div className="project_detail_arrow_wrapper">
+                  <div className="project_detail_arrow bounce" onClick={()=>detailHandler("cardshare")}>>> </div>
+                  <div className="yellow">{"  More Detail"}</div>
+                </div>
               </div>
               <div className="project_mock_wrapper">
                 <img className="project_left_mock" src="./images/mock_cardshare.png"  />
