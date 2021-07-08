@@ -25,7 +25,14 @@
 }
 
 .resume {
-    transform: translateX(-80px);
+    transform: translateX(-35px);
+}
+
+.hamburger_wrapper {
+    width:40px;
+    height:40px;
+    /* background-color: aquamarine; */
+    z-index: 999;
 }
 
 .hamburger_menu {
@@ -60,6 +67,7 @@
     background: #fff;
     border-radius: 5px;
     transition: all .5s ease-in-out;
+    z-index: 999;
 }
 
 .hamburger_menu_btn::before {
@@ -112,6 +120,7 @@
 .hamburger_choices_option {
     margin: 20px;
     font-size: 2em;
+    text-align: center;
 }
 
 .hamburger_choices_social {

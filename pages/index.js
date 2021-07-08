@@ -129,10 +129,12 @@ export default function Home() {
                 <a href="https://www.linkedin.com/in/louisa-wy-wong/" target="_blank"><img className="nav_icon" src="./images/LI-In-Bug.png"/></a>
                 <a href = "mailto: louisawywong@gmail.com?subject=Let's%20Connect!"><img className="nav_icon" src="./images/mail_white_48dp.svg"/></a>
               </div>
-              <div className="navigation_choice">
-                <a href="./files/Louisa_Wong_Resume_July_2021.pdf" download><button type="button" className="resume button" >Resume</button></a>
-                <div id="hamburger_menu" className="hamburger_menu" onClick={menuHandler}>
+              {/* <div className="navigation_choice"> */}
+                <a  className="resume button" href="./files/Louisa_Wong_Resume_July_2021.pdf" download>Resume</a>
+                <div className="hamburger_wrapper" onClick={menuHandler}>
+                <div id="hamburger_menu" className="hamburger_menu" >
                   <div className="hamburger_menu_btn"></div>
+                </div>
                 </div>
                 <div id="hamburger_choices" className="hamburger_choices">
                   <a className="hamburger_choices_option" onClick={menuHandler} href="#projects">Projects</a>
@@ -147,7 +149,7 @@ export default function Home() {
                   </div>
                 </div>
 
-              </div>
+              {/* </div> */}
             </div>
             <div className="hero_text">
               <div className="hero_text_name">
