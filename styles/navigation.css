@@ -25,7 +25,17 @@
 }
 
 .resume {
-    transform: translateX(-35px);
+    position: absolute;
+    top: 6vh;
+    right: calc(6vh + 80px);
+    background-color: var(--accent_blue);
+    border-radius: 5px;
+    padding: 8px 10px;
+    /* transform: translateX(-35px); */
+}
+
+.resume:hover {
+    cursor: pointer;
 }
 
 .hamburger_wrapper {

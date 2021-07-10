@@ -130,7 +130,7 @@ export default function Home() {
                 <a href = "mailto: louisawywong@gmail.com?subject=Let's%20Connect!"><img className="nav_icon" src="./images/mail_white_48dp.svg"/></a>
               </div>
              
-                <a  className="resume button" href="./files/Louisa_Wong_Resume_July_2021.pdf" download>Resume</a>
+                <a  className="resume" href="./files/Louisa_Wong_Resume_July_2021.pdf" download>Resume</a>
                 <div className="hamburger_wrapper" onClick={menuHandler}>
                   <div id="hamburger_menu" className="hamburger_menu" >
                     <div className="hamburger_menu_btn"></div>
@@ -186,24 +186,24 @@ export default function Home() {
             <div className="project_detail_exit" onClick={()=>detailHandler("plantiful")}>X</div>
               <h3 className="project_left_detail_title">User Stories:</h3>
               <ul className="project_detail_list">
-                <li>Users are able to create their own portfolio with a location tag</li>
-                <li>Users are able to discover inspiration posts from around the world based on most recent postings</li>
-                <li>Users are able to discover trades around them based on their current location</li>
-                <li>Users are able to contact other users via email for trades that interests them</li>
+                <li>Users are able to create and edit their own location-tagged user portfolio</li>
+                <li>Users are able to view inspiration posts from around the world, filtered by most-recent postings</li>
                 <li>Users are able to post plants for sell or for trade with geospatial tag and offer details</li>
+                <li>Users are able to discover local trades based on their current location</li>
+                <li>Users are able to contact other users via email for trades that interests them</li>
                 <li>Users are able to post photos of plant inspiration with geospatial tag and description</li>
-                <li>Users are able to search for plants through all posts</li>
+                <li>Users are able to search for keywords to pull up all posts, not just nearby posts</li>
                 <li>Users are able to delete any posts they own</li>
-                <li>Users are able to view other users’ profile with their posts separated by trade or inspiration</li>
+                <li>Users are able to view other users’ portfolio pages including all trades and inspiration postings</li>
               </ul>
               <h3 className="project_left_detail_title">Contributions:</h3>
-              <p className="project_detail_subtitle">Built the app from ideation to deployment in less than a week.</p>
+              <p className="project_detail_subtitle">Built the app from ideation to deployment with responsive UI.</p>
               <ul className="project_detail_list">
-                <li>Mapped out data flow and wireframed the design and display information</li>
+                <li>Mapped out data flow and wireframed the design</li>
                 <li>Built the API endpoints and database for user and posts information</li>
                 <li>Used MongoDB and geospatial coordinates to filter posts for nearby trades</li>
-                <li>Built react components to be reused throughout the whole website</li>
-                <li>Built and tested input forms for error-handling and validation</li>
+                <li>Designed and built functional React components that is easily reused through the website</li>
+                <li>Built and tested input forms with error-handling and validation</li>
               </ul>
             </div>
             
@@ -213,7 +213,7 @@ export default function Home() {
               </div>
               <div className="project_right">
                 <h1 className="project_left_title">Fitome – Progressive Web Application</h1>
-                <p className="project_left_info">A  management tool for personal trainers to connect with their clients during the pandemic and even afterwards. A tool for personal trainers to assign workout regimens and to schedule video calls for workouts and checkups with their clients directly on the app. Clients are able to view workouts and join their scheduled video calls on the client-side application.</p>
+                <p className="project_left_info">A management tool for personal trainers to connect remotely with their clients, inspired by the social distancing necessitated by the pandemic. A tool for personal trainers to assign workout regimens and to schedule video calls for workouts and checkups with their clients. Clients are able to view workouts and join their scheduled video calls on their desktop or mobile device.</p>
                 <p className="project_left_tech"><span className="yellow">[</span>Peer2Peer, Socket.io, Google WorkBox, Express, PostgreSQL, Sequelize, Redux, React, Next.JS, Firebase<span className="yellow">]</span></p>
                 <img className="project_body_mock" src="./images/mock_fitome.png" />
                 <div className="project_detail_arrow_wrapper">
@@ -228,14 +228,14 @@ export default function Home() {
               <ul className="project_detail_list">
                 <li>Users are able to sign up and login as a trainer</li>
                 <li>Trainers are given a unique personal code for clients to connect with them</li>
-                <li>Trainers are able to create their own exercises that are fully customizable with video option so clients can follow</li>
-                <li>Trainers are able to create their own reusable workouts by selecting a couple exercises from their list.
+                <li>Trainers are able to create their own exercises that are fully customizable with video option so clients can follow along</li>
+                <li>Trainers are able to create their own reusable workouts by selecting a series of exercises from a list.
                 </li>
-                <li>Trainers are able to personally assign the workouts to their individual clients with personalized amount of workouts and notes
+                <li>Trainers are able to assign the workouts to their individual clients with personalized details and notes
                 </li>
                 <li>Trainers are able to schedule video calls with their clients for weekly workouts and checkups
                 </li>
-                <li>Trainers are able to use and edit the real-time stopwatch overlay during a video call
+                <li>Trainers are able to use and edit the real-time stopwatch overlay during the video calls
                 </li>
               </ul>
               <h3 className="project_left_detail_title">Client User Stories:</h3>
@@ -244,7 +244,7 @@ export default function Home() {
                 </li>
                 <li>Clients must connect with their trainers via trainer’s personal code
                 </li>
-                <li>Clients are able to input and edit their personal info for their trainers to view (ie. Height, muscle measurements, etc)
+                <li>Clients are able to input and edit their personal info for their trainers to view (i.e. height, muscle measurements, etc)
                 </li>
                 <li>Clients are able to view their workouts and detailed exercises online and offline
                 </li>
@@ -256,9 +256,9 @@ export default function Home() {
               <h3 className="project_left_detail_title">Contributions:</h3>
               <p className="project_detail_subtitle">Lead a fully remote team of 4 engineers as the Scrum Master from start to deployment.</p>
               <ul className="project_detail_list">
-                <li>Built the main video chat feature using socket.io and Peer2Peer connection on both front and backend on Express</li>
                 <li>Wire-framed and designed the style and data flow with a mobile-first approach to create a beautiful, responsive UI</li>
-                <li>Built out the interactive forms for data inputs with validation</li>
+                <li>Built the main video chat feature using socket.io and Peer2Peer connection on both frontend and backend on Express</li>
+                <li>o	Built the interactive forms for data inputs with validation and error handling</li>
               </ul>
             </div>
 
@@ -281,28 +281,28 @@ export default function Home() {
             <div className="project_detail_exit" onClick={()=>detailHandler("cardshare")}>X</div>
               <h3 className="project_left_detail_title">User Stories:</h3>
               <ul className="project_detail_list">
-                <li>Users are able to make their own accounts
+                <li>Users are able to create their own accounts
                 </li>
-                <li>Users are able to search for literatures in the search bar (Google Books API)
+                <li>Users are able to search for book titles in the search bar (Google Books API)
                 </li>
-                <li>Users are able to save other users deck to their “Study” page
+                <li>Users are able to save other users' decks to their “Study” page
                 </li>
                 <li>Users are able to explore the most popular decks on the site
                 </li>
                 <li>Users are able to upvote or downvote other decks
                 </li>
-                <li>Users are able to discover other decks using the same literature
+                <li>Users are able to discover other decks with the same book title
                 </li>
-                <li>Users are able create their own decks
+                <li>Users are able to create their own decks
                 </li>
-                <li>Users are able to study by going through flashcards, one by one.
+                <li>Users are able to flip through the flashcards in each deck to study or test their knowledge.
                 </li>
 
               </ul>
               <h3 className="project_left_detail_title">Contributions:</h3>
-              <p className="project_detail_subtitle">Brought on with a small team of engineer to test and to refactor legacy codebase.</p>
+              <p className="project_detail_subtitle">Brought on with a small team of engineers to test and to refactor legacy codebase.</p>
               <ul className="project_detail_list">
-                <li>Translated both frontend and backend code from Javascript to TypeScript
+                <li>Translated both frontend and backend code from JavaScript to TypeScript
                 </li>
                 <li>Added integration automated tests to backend using SuperTest and Jest
                 </li>
@@ -325,8 +325,8 @@ export default function Home() {
               </div>
               <div className="about_right">
                 <h1 className="about_title">Hey, I'm Louisa</h1>
-                <p className="project_left_info">My passion for programming started in 2012 when I first discovered Java to create a simple online self-driving robot that learns how to navigate and shoots on its own for a school competition. Now, I’m a full stack engineer that loves to turn ideas into  beautiful online spaces.</p>
-                <p className="project_left_info">As I studied and worked in Marketing, it allows me to plan and develop with a user-driven mindset. I enjoy writing code that solves real-life problem by merging functionality and creativity together. I love a good challenge and problem solving, it’s all about looking at it from different perspectives and breaking it down into bite size pieces.</p>
+                <p className="project_left_info">My passion for programming started in 2012 when I first discovered Java and created a simple online self-driving robot that learns how to navigate and shoots on its own for a school competition. Now, I’m a full stack engineer that loves to turn ideas into  beautiful online spaces.</p>
+                <p className="project_left_info">As I studied and worked in Marketing,  I have relevant experience which has helped me to plan and develop applications with a user-driven mindset. I enjoy writing code that solves real-life problem by merging functionality and creativity together. I love a good challenge and problem solving as it’s all about looking at a situation from different perspectives and breaking it down into bite size pieces.</p>
                 <p className="project_left_info">When I’m not coding, you can either find me in a coffee shop or in the craft room getting my hands on my next project. Let’s grab a coffee and discuss ideas!</p>
               </div>
             </div> 
@@ -379,7 +379,7 @@ export default function Home() {
                 <img className="coffee_stain" src="/images/coffee_stain.png"/>
             <h3 className="contact_title">Let's discuss ideas over coffee!</h3>
             <div className="contact_info contact_line">
-              <a className="contact_social" href = "mailto: louisawywong@gmail.com?subject=Let's%20Connect!"><img className="nav_icon contact_icon" src="./images/mail_white_48dp.svg"/> louisa.wy.wong@gmail.com</a>
+              <a className="contact_social" href = "mailto: louisawywong@gmail.com?subject=Let's%20Connect!"><img className="nav_icon contact_icon" src="./images/mail_white_48dp.svg"/> louisawywong@gmail.com</a>
               <a className="contact_social"  href="https://github.com/louisawong" target="_blank"><img className="nav_icon contact_icon" src="./images/GitHub-Mark-Light-120px-plus.png"/> Browse more projects </a>
               <a className="contact_social"  href="https://www.linkedin.com/in/louisa-wy-wong/" target="_blank"><img className="nav_icon contact_icon" src="./images/LI-In-Bug.png"/> Connect with me</a>
             </div>
