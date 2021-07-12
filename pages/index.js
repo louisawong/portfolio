@@ -172,13 +172,13 @@ export default function Home() {
                 <p className="project_left_info">A responsive web application designed for the plant-loving community. Users are able to connect with nearby users to sell or trade their plant collection or to share their plant inspirations globally.</p>
                 <p className="project_left_tech"><span className="yellow">[</span>React, Next.JS, Next.JS API, Redux, SASS, MongoDB, Mongoose, Firebase<span className="yellow">]</span></p>
                 <img className="project_body_mock" src="./images/mock_plantiful.png" />
-                <div className="project_detail_arrow_wrapper">
-                  <div className="project_detail_arrow bounce" onClick={()=>detailHandler("plantiful")}>>></div>
+                <div className="project_detail_arrow_wrapper" onClick={()=>detailHandler("plantiful")}>
+                  <div className="project_detail_arrow bounce" >>></div>
                   <div className="yellow">{"  More Detail"}</div>
                 </div>
               </div>
-              <div className="project_mock_wrapper">
-              <img className="project_left_mock" src="./images/mock_plantiful.png" />
+              <div className="project_mock_wrapper plantiful_mock">
+              <img className="project_left_mock " src="./images/mock_plantiful.png" />
 
               </div>
             </div>
@@ -213,11 +213,11 @@ export default function Home() {
               </div>
               <div className="project_right">
                 <h1 className="project_left_title">Fitome – Progressive Web Application</h1>
-                <p className="project_left_info">A management tool for personal trainers to connect remotely with their clients, inspired by the social distancing necessitated by the pandemic. A tool for personal trainers to assign workout regimens and to schedule video calls for workouts and checkups with their clients. Clients are able to view workouts and join their scheduled video calls on their desktop or mobile device.</p>
+                <p className="project_left_info">A PWA management tool for personal trainers to connect remotely with their clients, inspired by the social distancing necessitated by the pandemic. A tool for personal trainers to assign workout regimens and to schedule video calls for workouts and checkups with their clients. Clients are able to view workouts and join their scheduled video calls on their desktop or mobile device.</p>
                 <p className="project_left_tech"><span className="yellow">[</span>Peer2Peer, Socket.io, Google WorkBox, Express, PostgreSQL, Sequelize, Redux, React, Next.JS, Firebase<span className="yellow">]</span></p>
                 <img className="project_body_mock" src="./images/mock_fitome.png" />
-                <div className="project_detail_arrow_wrapper">
-                  <div className="project_detail_arrow bounce" onClick={()=>detailHandler("fitome")}>>> </div>
+                <div className="project_detail_arrow_wrapper" onClick={()=>detailHandler("fitome")}>
+                  <div className="project_detail_arrow bounce" >>> </div>
                   <div className="yellow">{"  More Detail"}</div>
                 </div>
               </div>
@@ -258,7 +258,7 @@ export default function Home() {
               <ul className="project_detail_list">
                 <li>Wire-framed and designed the style and data flow with a mobile-first approach to create a beautiful, responsive UI</li>
                 <li>Built the main video chat feature using socket.io and Peer2Peer connection on both frontend and backend on Express</li>
-                <li>o	Built the interactive forms for data inputs with validation and error handling</li>
+                <li>Built the interactive forms for data inputs with validation and error handling</li>
               </ul>
             </div>
 
@@ -268,8 +268,8 @@ export default function Home() {
                 <p className="project_left_info">A flashcard sharing site made for booklovers to retain and share knowledge.</p>
                 <p className="project_left_tech"><span className="yellow">[</span>TypeScript, Jest, React Testing Library, SuperTest, React, Next.JS, Express, MongoDB, Mongoose, Firebase<span className="yellow">]</span></p>
                 <img className="project_body_mock" src="./images/mock_cardshare.png"  />
-                <div className="project_detail_arrow_wrapper">
-                  <div className="project_detail_arrow bounce" onClick={()=>detailHandler("cardshare")}>>> </div>
+                <div className="project_detail_arrow_wrapper" onClick={()=>detailHandler("cardshare")}>
+                  <div className="project_detail_arrow bounce" >>> </div>
                   <div className="yellow">{"  More Detail"}</div>
                 </div>
               </div>
