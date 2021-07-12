@@ -12,9 +12,11 @@
   /* --primary: rgb(133, 246, 250); */
   --light: rgb(152,84,201);
   --accent: rgb(211, 86, 134);
-  --accent_blue: rgb(255, 208, 0);
+  /* --accent_blue: rgb(255, 208, 0); */
+  --accent_blue: rgb(255, 200, 0);
   /* --accent_blue: rgb(255, 173, 21); */
-  --dark: rgb(78, 135, 145);
+  /* --dark: rgb(78, 135, 145); */
+  --dark: rgb(39, 102, 112);
   --grey: rgb(227, 236, 238);
 }
 

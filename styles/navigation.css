@@ -31,6 +31,7 @@
     background-color: var(--accent_blue);
     border-radius: 5px;
     padding: 8px 10px;
+    color: var(--dark);
     /* transform: translateX(-35px); */
 }
 
