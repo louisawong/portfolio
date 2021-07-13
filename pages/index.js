@@ -325,7 +325,7 @@ export default function Home() {
               </div>
               <div className="about_right">
                 <h1 className="about_title">Hey, I'm Louisa</h1>
-                <p className="project_left_info">My passion for programming started in 2012 when I first discovered Java and created a simple online self-driving robot that learns how to navigate and shoots on its own for a school competition. Now, I’m a full stack engineer that loves to turn ideas into  beautiful online spaces.</p>
+                <p className="project_left_info">My passion for programming started in 2012 when I first discovered Java and created a simple self-driving robot that learns how to navigate and shoots on its own for a school competition. Now, I’m a full stack engineer that loves to turn ideas into  beautiful online spaces.</p>
                 <p className="project_left_info">As I studied and worked in Marketing,  I have relevant experience which has helped me to plan and develop applications with a user-driven mindset. I enjoy writing code that solves real-life problem by merging functionality and creativity together. I love a good challenge and problem solving as it’s all about looking at a situation from different perspectives and breaking it down into bite size pieces.</p>
                 <p className="project_left_info">When I’m not coding, you can either find me in a coffee shop or in the craft room getting my hands on my next project. Let’s grab a coffee and discuss ideas!</p>
               </div>
