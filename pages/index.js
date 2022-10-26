@@ -130,7 +130,7 @@ export default function Home() {
                 <a href = "mailto: louisawywong@gmail.com?subject=Let's%20Connect!"><img className="nav_icon" src="./images/mail_white_48dp.svg"/></a>
               </div>
              
-                <a  className="resume" href="./files/Louisa_Wong_Resume_July_2021.pdf" download>Resume</a>
+                <a  className="resume" href="./files/Louisa_Wong-2022.pdf" download>Resume</a>
                 <div className="hamburger_wrapper" onClick={menuHandler}>
                   <div id="hamburger_menu" className="hamburger_menu" >
                     <div className="hamburger_menu_btn"></div>
@@ -141,7 +141,7 @@ export default function Home() {
                   <a className="hamburger_choices_option" onClick={menuHandler} href="#about">About Me</a>
                   <a className="hamburger_choices_option" onClick={menuHandler} href="#tech">Technologies</a>
                   <a className="hamburger_choices_option" onClick={menuHandler} href="#contact">Contact Me</a>
-                  <a href="./files/Louisa_Wong_Resume_July_2021.pdf" download className="hamburger_choices_option">Download Resume</a>
+                  <a href="./files/Louisa_Wong-2022.pdf" download className="hamburger_choices_option">Download Resume</a>
                   <div className="hamburger_choices_social">
                     <a href="https://github.com/louisawong" target="_blank"><img className="nav_icon" src="./images/GitHub-Mark-Light-120px-plus.png"/></a>
                     <a href="https://www.linkedin.com/in/louisa-wy-wong/" target="_blank"><img className="nav_icon" src="./images/LI-In-Bug.png"/></a>
@@ -339,6 +339,7 @@ export default function Home() {
                 <ul className="tech_column_list">
                   <li className="tech_list">JavaScript</li>
                   <li className="tech_list">TypeScript</li>
+                  <li className="tech_list">NextJS</li>
                   <li className="tech_list">React</li>
                   <li className="tech_list">Angular</li>
                   <li className="tech_list">RxJS</li>
@@ -350,7 +351,7 @@ export default function Home() {
                  <h3 className="tech_column_title">Backend</h3>
                  <ul className="tech_column_list">
                   <li className="tech_list">NodeJS</li>
-                  <li className="tech_list">Express</li>
+                  <li className="tech_list">ExpressJS</li>
                   <li className="tech_list">Koa</li>
                   <li className="tech_list">GraphQL</li>
                   <li className="tech_list">MongoDB</li>
