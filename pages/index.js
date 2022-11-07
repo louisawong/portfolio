@@ -364,6 +364,7 @@ export default function Home() {
               <div className="tech_column">
                 <h3 className="tech_column_title">General</h3>
                 <ul className="tech_column_list">
+                  <li className="tech_list">AWS</li>
                   <li className="tech_list">Jest</li>
                   <li className="tech_list">Mocha</li>
                   <li className="tech_list">SuperTest</li>
